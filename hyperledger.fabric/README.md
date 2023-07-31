@@ -2,7 +2,6 @@
 
 ```
 conda remove --name hyperledger --all
-# conda create -n hyperledger python==2.7.13 pip
 conda create -n hyperledger python=3.10 pip
 conda activate hyperledger
 ```
@@ -27,6 +26,26 @@ docker run -d --name portainer -p 8000:8000 -p 9443:9443 -p 9090:9000 -v /var/ru
 docker container start 4c90e25db6ea
 docker build ./ -t compose
 
+#체인 코드 로그 확인
+docker logs -f cli
+
+$ docker logs dev-peer0.org2.example.com-mycc-1.0
+04:30:45.947 [BCCSP_FACTORY] DEBU : Initialize BCCSP [SW]
+ex02 Init
+Aval = 100, Bval = 200
+
+$ docker logs dev-peer0.org1.example.com-mycc-1.0
+04:31:10.569 [BCCSP_FACTORY] DEBU : Initialize BCCSP [SW]
+ex02 Invoke
+Query Response:{"Name":"a","Amount":"100"}
+ex02 Invoke
+Aval = 90, Bval = 210
+
+$ docker logs dev-peer1.org2.example.com-mycc-1.0
+04:31:30.420 [BCCSP_FACTORY] DEBU : Initialize BCCSP [SW]
+ex02 Invoke
+Query Response:{"Name":"a","Amount":"90"}
+
 # !!! THIS WILL REMOVE ALL YOUR DOCKER CONTAINERS AND IMAGES !!!
 # remove all containers
 $ docker rm $(docker ps -qa)
@@ -39,6 +58,22 @@ $ docker network prune
 ###nvm comoser-palygroud run
 
 ```
+conda remove --name composer --all
+conda create -n composer python=2.7.13 pip
+conda activate composer
+
+nvm install 8.7
+nvm use 8.7
+npm install npm@5.6.0 -g
+node -v
+npm -v
+
+npm install -g composer-cli@0.20
+npm install -g composer-rest-server@0.20
+npm install -g generator-hyperledger-composer@0.20
+npm install -g yo
+npm install -g composer-playground
+
 composer-playground
 ```
 

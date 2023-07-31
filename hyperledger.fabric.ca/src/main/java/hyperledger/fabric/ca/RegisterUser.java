@@ -104,22 +104,22 @@ public class RegisterUser {
 		// wallet.
 //		RegistrationRequest registrationRequest = new RegistrationRequest("appUser");
 //		registrationRequest.setAffiliation("org1.department1");
-//		registrationRequest.setEnrollmentID("appUser1");
+//		registrationRequest.setEnrollmentID("appUser");
 //		String enrollmentSecret = caClient.register(registrationRequest, admin);
-//		Enrollment enrollment = caClient.enroll("appUser1", enrollmentSecret);
+//		Enrollment enrollment = caClient.enroll("appUser", enrollmentSecret);
 //		Identity user = Identities.newX509Identity("Org1MSP", adminIdentity.getCertificate(),
 //				adminIdentity.getPrivateKey());
-//		wallet.put("appUser1", user);
+//		wallet.put("appUser", user);
 //		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
 		
-		RegistrationRequest registrationRequest = new RegistrationRequest("appUser");
-		registrationRequest.setAffiliation("org1.department2");
-		registrationRequest.setEnrollmentID("team");
+		RegistrationRequest registrationRequest = new RegistrationRequest("team1");
+		registrationRequest.setAffiliation("org1.department1");
+		registrationRequest.setEnrollmentID("team1");
 		String enrollmentSecret = caClient.register(registrationRequest, admin);
-		Enrollment enrollment = caClient.enroll("team", enrollmentSecret);
+		Enrollment enrollment = caClient.enroll("team1", enrollmentSecret);
 		Identity user = Identities.newX509Identity("Org1MSP", adminIdentity.getCertificate(),
 				adminIdentity.getPrivateKey());
-		wallet.put("team", user);
+		wallet.put("team1", user);
 		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
 	}
 
