@@ -2,7 +2,8 @@
 
 ```
 conda remove --name hyperledger --all
-conda create -n hyperledger python==2.7.13 pip
+# conda create -n hyperledger python==2.7.13 pip
+conda create -n hyperledger python=3.10 pip
 conda activate hyperledger
 ```
 
@@ -10,8 +11,10 @@ conda activate hyperledger
 
 ```
 nvm list
-nvm install v8.7
-nvm use 8.7
+# nvm install v8.7
+# nvm use 8.7
+nvm install v12.22.12
+nvm use v12.22.12
 ```
 
 ###docker
@@ -23,6 +26,14 @@ docker run -d --name portainer -p 8000:8000 -p 9443:9443 -p 9090:9000 -v /var/ru
 
 docker container start 4c90e25db6ea
 docker build ./ -t compose
+
+# !!! THIS WILL REMOVE ALL YOUR DOCKER CONTAINERS AND IMAGES !!!
+# remove all containers
+$ docker rm $(docker ps -qa)
+# remove all mages
+$ docker rmi --force $(docker images -qa)
+# prune networks
+$ docker network prune
 ```
 
 ###nvm comoser-palygroud run
@@ -43,8 +54,8 @@ jq --version
 ###### fabric download
 
 ```
-curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.3.1 1.4.9
-curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.0 1.4.7 \*
+# curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.3.1 1.4.9
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.0 1.4.7 *
 ```
 
 ###### 기본 네트워크 실행
@@ -52,9 +63,8 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.0 1.4.7 \*
 ```
 fabric-samples/test-network 이동
 ./network.sh down 이전 네트워크 삭제
-./network.sh up 네트워크 실행
-
-./network.sh createChannel -c ${channel_name}
+# ./network.sh up 네트워크 실행
+# ./network.sh createChannel -c ${channel_name}
 
 ###### CA 및 couchdb를 사용하는 네트워크 실행
 ./network.sh up createChannel -ca -c mychannel -s couchdb *
@@ -106,4 +116,18 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
 peer chaincode query -C mychannel -n basic -c '{"Args":["GetAllAssets"]}'
 ```
 
-###hyperledger fabric sample 실행
+###hyperledger fabric ca 구현
+
+#####fabric download
+
+```
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.0 1.4.7
+```
+
+#####1. script will download the docker images and tag them for you.
+#####2. can be used to start the fabcar
+
+```
+fabric-samples/scripts/fabric-preload.sh
+fabric-samples/fabcar/startFabric.sh network
+```
