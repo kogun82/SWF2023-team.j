@@ -29,4 +29,4 @@ npm install
 
 node enrollAdmin.js
 node registerUser.js
-node query.js
+node invoke.js
