@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+#wrap{width:100%;min-width:1280px;height:100%}
+
+/*** Layout : S ***/
+#userTop{position:fixed;top:-100%;left:0;width:100%;padding:.5rem 1.5rem .5rem 9.5rem;background:#fff}
+#userTop:after{content:"";display:block;clear:both}
+#userTop .userBtn_area{float:right}
+
+#nav{position:fixed;left:0;top:0;height:100%;border-right:1px solid #ddd;background:#fff;overflow:hidden;z-index:9;transition:all .6s ease}
+#nav.on,
+#nav:hover{width:9.5rem}
+#nav .navWrap{overflow:hidden;/*width:9.5rem*/}
+#nav .navTop{display:flex;padding:1rem 0 0 .6rem;margin-bottom:.85rem;overflow:hidden}
+#nav .navTop button,
+#nav .navTop .logo{display:inline-block}
+#nav .navTop .logo{margin-left:.4rem}
+#nav .navTop .logo img{max-width:inherit;width:3.5rem}
+#nav .menuToggle{position:relative;width:2.4rem;height:2.4rem;border-radius:50%;transition:all .3s}
+#nav .menuToggle:hover{background:#e8eaed}
+#nav .menuToggle:active{background:#CDCFD2}
+#nav .menuToggle em{position:absolute;left:50%;margin-left:-.5rem;top:50%;margin-top:-.35rem;width:20px;height:14px}
+#nav .menuToggle i{position:absolute;left:0;width:100%;height:2px;background-color:#2C3E50;transition:all .3s}
+#nav .menuToggle i:nth-of-type(1){top:0}
+#nav .menuToggle i:nth-of-type(2){top:.3rem}
+#nav .menuToggle i:nth-of-type(3){bottom:0}
+/* animation */
+/*#nav .menuToggle.on i:nth-of-type(1){-webkit-transform:translateY(6px) rotate(-45deg);transform:translateY(6px) rotate(-45deg)}
+#nav .menuToggle.on i:nth-of-type(2){left:50%;opacity:0;-webkit-animation:active-menu-bar .8s forwards;animation:active-menu-bar .8s forwards}
+#nav .menuToggle.on i:nth-of-type(3){-webkit-transform:translateY(-6px) rotate(45deg);transform:translateY(-.3rem) rotate(45deg)}*/
+@-webkit-keyframes active-menu-bar{
+    100%{height:0}
+}
+@keyframes active-menu-bar{
+    100%{height:0}
+}
+
+#nav #gnb{}
+#nav #gnb>li>a{display:block;position:relative;padding:.4rem 0 .4rem 1.2rem;color:#666;font-weight:500;font-size:.8rem;transition:all .3s}
+#nav #gnb>li>a>div.menuItem{width:9.5rem;display:flex;flex-direction:row}
+#nav #gnb>li>a.on{background:#F4F6F7;color:#000}
+#nav #gnb>li>a:hover,
+#nav #gnb>li>a.on:hover{background:#f8f9fa}
+#nav #gnb>li>a:after{content:"";position:absolute;right:0;top:50%;width:2px;height:0;background:#2E63FB;transition:all .3s}
+#nav #gnb>li>a.on:after{top:0;height:100%}
+#nav #gnb>li>a>.menuItem>span{display:block;margin-left:1rem;vertical-align:middle}
+
+#container{margin:2.8rem 0 0 3.4rem;height:calc(100vh - 3rem);transition:all .6s ease;overflow-y:auto}
+#container .section{margin-top:2rem}
+#container .section:first-of-type{margin-top:0}
+#nav:hover + #container,
+#nav.on + #container{margin-left:9.5rem}
+
+#content{padding:0 1.5rem 0 2rem;min-height:calc(100vh - 8.5rem)}
+.inner{width:100%;max-width:calc(100% - 8.5rem);margin:0 auto 0 0}
+
+.topTitle{position:relative;height:14.9rem;margin-bottom:2.5rem;border-radius:.5rem;overflow:hidden}
+.topTitle>span{position:absolute;left:2.5rem;top:1.35rem;display:inline-block;padding-left:1.5rem;color:#fff}
+.topTitle>span:before{content:"";position:absolute;left:0;top:50%;margin-top:-.1rem;width:1rem;height:.2rem;background:#fff}
+.topTitle>div{position:absolute;left:2.5rem;bottom:2rem;color:#fff;overflow:hidden}
+.topTitle>div>h2{margin-bottom:.2rem;font-size:1.5rem;font-weight:700;line-height:2rem}
+.topTitle>div>p>span{display:block}
+.topTitle .topTitle_bg{position:absolute;left:0;top:0;width:100%;height:100%;background:url(../images/common/bg_topTit.jpg) center no-repeat;background-size:cover}
+
+.topTitle.type2{height:auto;padding:1.5rem;border:1px solid #ddd;margin-bottom:1rem;background:#fff}
+.topTitle.type2>div{position:relative;left:inherit;bottom:inherit;color:#222}
+.topTitle.type2>div>h2{margin-bottom:.5rem;font-size:1.8rem;font-weight:400}
+
+#footer{padding:2.4rem 2rem}
+#footer .copyright{position:relative;padding-top:0.95rem;color:#888;font-size:.7rem}
+#footer .copyright:before{content:"";position:absolute;left:0;top:0;width:2.5rem;border-bottom:5px solid #222}
+/*** Layout : E ***/
+
+/*** effect : S ***/
+#userTop{top:-100%;transition:all .8s}
+#wrap.on #userTop{top:0}
+#userTop:before{content:"";position:absolute;left:50%;bottom:1px;width:0;border-bottom:1px solid #ddd;transition:all 1s}
+#userTop.on:before{left:0;width:100%}
+
+.topTitle{opacity:.6;transition:all .8s ease-in}
+#wrap.on .topTitle{opacity:1}
+.topTitle>span{opacity:0;transition:all .8s .7s}
+#wrap.on .topTitle>span{opacity:.7}
+.topTitle>div>h2{position:relative;top:-2rem;opacity:0;transition:all .8s 1.2s}
+#wrap.on .topTitle>div>h2{top:0;opacity:1}
+.topTitle .topTitle_bg{transform:scale(1.2);transition:all 3.5s}
+#wrap.on .topTitle .topTitle_bg{transform:scale(1)}
+
+.topTitle.type2{opacity:0;transition:all .8s}
+#wrap.on .topTitle.type2{opacity:1}
+
+.topTitle>div>h2{position:relative;top:0;opacity:0;filter:blur(10px);transition:all .8s 1s}
+#wrap.on .topTitle>div>h2{opacity:1;filter:blur(0)}
+
+/* Responsive */
+@media all and (max-width:1800px){
+    .gly_list li a .gly_item .gly_img img{width:inherit;max-width:inherit}
+    .inner{max-width:100%}
+}
+@media all and (max-width:1400px){
+
+}
+@media all and (min-width:1280px){
+    #nav{width:3.4rem}
+    #nav.on{width:9.5rem}
+    #container{margin-left:3.4rem}
+    #nav.on + #container{margin-left:9.5rem}
+}
+@media all and (max-width:1279px){
+    #nav{width:3.4rem}
+}
+@media all and (max-width:1500px){
+    #loginWrap .loginBox{width:26rem;padding:0 4rem}
+}

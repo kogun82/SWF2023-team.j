@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+    <meta name="title" content="GENOBLOCK">
+    <meta name="description" content="Blockchain-based personalized disease prevention management system">
+    <meta name="keyword" content="BLOCKCHAIN, GENOME, DISEASE">
+    <meta name="author" content="TEAM.J">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GENOBLOCK">
+    <meta property="og:site_name" content="GENOBLOCK">
+    <meta property="og:description" content="Blockchain-based personalized disease prevention management system">
+    <title>User | VCF List</title>
+    <!-- Common CSS -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/layout.css}">
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
+    <!-- Common JS -->
+    <script th:src="@{/js/jquery-1.12.4.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+    <script th:src="@{/js/jquery.textillate.js}"></script>
+    <script th:src="@{/js/jquery.lettering.js}"></script>
+
+    <!-- Sub JS -->
+    <script th:src="@{/js/slick.min.js}"></script>
+
+    <!-- Sub CSS -->
+    <link rel="stylesheet" th:href="@{/css/content.css}">
+
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="skip_nav">
+    <a href="#content">The body go</a>
+    <a href="#nav">Menu go</a>
+</div>
+<div id="wrap">
+    <!-- user top button : s -->
+    <div id="userTop">
+        <ul class="userBtn_area">
+            <li>
+                <a href="#" class="btn logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <!-- user top button : e -->
+
+    <!-- Navigation : s -->
+     <th:block th:insert="menu.html">
+	</th:block>
+    <!-- Navigation : e -->
+
+    <!-- main : s -->
+    <main id="container">
+        <section id="content">
+            <h2 class="blind">Content Area</h2>
+            <div class="inner">
+                <div class="topTitle" id="introTxt">
+                    <div class="topTitle_bg"></div>
+                    <span>Korean Bioinformation Center</span>
+                    <div>
+                        <h2>Scientific Research Technological</h2>
+                        <p><span class="row r1">To Disseminate the Results of its Scientific Research</span> <span class="row r2">and Technological Development</span></p>
+                        <script>
+                            textEffect();   //text effect
+                        </script>
+                    </div>
+                </div>
+
+                <article class="section">
+                    <ul class="gly_list">
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_1.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Classification</strong>
+                                        <span>Identifying which category an object belongs to.</span>
+                                        <p>Identifying which category an object belongs to.Applications : Spam detection, image recognition. Algorithms: SVM, nearest neighbors, random forest</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_2.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Regression</strong>
+                                        <span>Predicting a continuous-valued attribute associated with an object. </span>
+                                        <p>Applications: Drug response, Stock prices.<br> Algorithms: SVR, nearest neighbors, random forest</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_3.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Clustering</strong>
+                                        <span>Automatic grouping of similar objects into sets.</span>
+                                        <p>Applications: Customer segmentation,<br>
+                                            Grouping experiment outcomes.<br>
+                                            Algorithms: k-Means, spectral clustering, mean-shift</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_4.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Dimensionality reduction</strong>
+                                        <span>Reducing the number of random variables to consider.</span>
+                                        <p>Applications: Visualization, Increased efficiency<br>
+                                            Algorithms: k-Means, feature selection, non-negative matrix factorization</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_5.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Model selection</strong>
+                                        <span>Comparing, validating and choosing parameters and models.</span>
+                                        <p>Applications: Improved accuracy via parameter tuning<br>
+                                            Algorithms: grid search, cross validation, metrics</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="gly_item">
+                                    <div class="gly_img">
+                                        <img src="../images/content/img_sample_6.jpg" alt="">
+                                    </div>
+                                    <div class="gly_info">
+                                        <strong>Preprocessing</strong>
+                                        <span>Feature extraction and normalization.</span>
+                                        <p>Applications: Transforming input data such as text for use with machine learning algorithms<br>
+                                            Algorithms: preprocessing, feature extraction</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="section">
+                    <table class="tbl type2">
+                        <caption>category table, Categorization, Library, Algorithm, Descriptions, Execute</caption>
+                        <colgroup>
+                            <col style="width:4rem">
+                            <col style="width:8rem">
+                            <col style="width:6rem">
+                            <col style="width:14rem">
+                            <col>
+                            <col style="width:3rem">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Categorization</th>
+                            <th scope="col">Library</th>
+                            <th scope="col">Algorithm</th>
+                            <th scope="col">Descriptions</th>
+                            <th scope="col">Execute</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/common/img_default.jpg)"></div></td>
+                            <td>Classifiers</td>
+                            <td>A Library</td>
+                            <td><strong>Pathologic diagnosis and veterinary clinical care</strong></td>
+                            <td>This model optimizes the log-loss function using LBFGS or stochastic gradient descent.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list1.jpg)"></div></td>
+                            <td>Classifiers</td>
+                            <td>B Library</td>
+                            <td><strong>Pathologic diagnosis and veterinary clinical care</strong></td>
+                            <td>This model optimizes the log-loss function using LBFGS or stochastic gradient descent.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list2.jpg)"></div></td>
+                            <td>Classifiers</td>
+                            <td>A Library</td>
+                            <td><strong>Development of brain disease models</strong></td>
+                            <td>Ordinary least squares Linear Regression.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list3.jpg)"></div></td>
+                            <td>Clusterers</td>
+                            <td>B Library</td>
+                            <td><strong>Understanding the immunologic mechanisms in immunization</strong></td>
+                            <td>t-distributed Stochastic eighbor Embedding.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list4.jpg)"></div></td>
+                            <td>Neural Networks</td>
+                            <td>A Library</td>
+                            <td><strong>Neuroscience and behavioral science</strong></td>
+                            <td>vero rerum temporibus dolor</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list5.jpg)"></div></td>
+                            <td>Classifiers</td>
+                            <td>B Library</td>
+                            <td><strong>Veterinary clinical diagnosis and care for nonhuman primates</strong></td>
+                            <td>This model optimizes the log-loss function using LBFGS or stochastic gradient descent.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list6.jpg)"></div></td>
+                            <td>Classifiers</td>
+                            <td>A Library</td>
+                            <td><strong>Pathologic diagnosis and veterinary clinical care</strong></td>
+                            <td>Ordinary least squares Linear Regression.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list7.jpg)"></div></td>
+                            <td>Clusterers</td>
+                            <td>B Library</td>
+                            <td><strong>Development of brain disease models</strong></td>
+                            <td>t-distributed Stochastic eighbor Embedding.</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list8.jpg)"></div></td>
+                            <td>Neural Networks</td>
+                            <td>A Library</td>
+                            <td><strong>Understanding the immunologic mechanisms in immunization</strong></td>
+                            <td>vero rerum temporibus dolor</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list9.jpg)"></div></td>
+                            <td>Neural Networks</td>
+                            <td>B Library</td>
+                            <td><strong>Neuroscience and behavioral science</strong></td>
+                            <td>vero rerum temporibus dolor</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        <tr onclick="excModal();" class="cursor_p">
+                            <td><div class="thumb" style="background-image:url(../images/content/sample_list10.jpg)"></div></td>
+                            <td>Neural Networks</td>
+                            <td>A Library</td>
+                            <td><strong>Veterinary clinical diagnosis and care for nonhuman primates</strong></td>
+                            <td>vero rerum temporibus dolor</td>
+                            <td class="center"><a href="javascript:excModal();" class="excBtn"><img src="../images/common/icon_arrow.png" alt="Execute"></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <!-- footer : s -->
+        <footer id="footer">
+            <p class="copyright">Copyright (C) 2021 By Korean Bioinformation Center(KOBIC). All Rights Reserved.</p>
+        </footer>
+        <!-- footer : e -->
+    </main>
+    <!-- main : e -->
+
+    <!-- Execute modal popup : s -->
+    <div class="modal_layer">
+        <div class="modal_layerWrap">
+            <div class="modalBox">
+                <form>
+                    <h3 class="title">Execute</h3>
+                    <div class="execWrap">
+                        <div class="inputWrap">
+                            <div class="input_rowWrap">
+                                <div class="input_row">
+                                    <!-- 중복이 아닌 경우(inputBtn_box에 green 클래스 추가) : s -->
+                                    <div class="inputBtn_box green">
+                                        <div class="inputBox">
+                                            <input type="text" name="projectName" id="projectName" title="Project Name" placeholder="Project Name">
+                                        </div>
+                                        <button type="button" class="dup_btn">Duplicate Check</button>
+                                    </div>
+                                    <!-- 중복이 아닌 경우 : e -->
+
+                                    <!-- 중복인 경우(inputBtn_box에 red 클래스 추가) : s -->
+                                    <!--<div class="inputBtn_box red">
+                                        <div class="inputBox">
+                                            <input type="text" name="projectName" id="projectName" title="Project Name" placeholder="Project Name">
+                                        </div>
+                                        <button type="button" class="dup_btn">Duplicate Check</button>
+                                    </div>-->
+                                    <!-- 중복인 경우 : e -->
+                                </div>
+                                <div class="input_row">
+                                    <input type="text" name="projectDesc" id="projectDesc" title="Project Description" placeholder="Project Description">
+                                </div>
+                                <div class="input_row">
+                                    <input type="text" name="kwd" id="kwd" title="Keyword" placeholder="Keyword">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_btnArea right">
+                        <button type="reset" class="btn def resetBtn">Clear</button>
+                        <button type="submit" class="btn defBlack">Apply</button>
+                    </div>
+                </form>
+            </div>
+            <div class="closeArea">
+                <button type="button" class="modal_close"><span class="blind">Close</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- Execute modal popup : e -->
+</div>
+</body>
+</html>
