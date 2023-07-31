@@ -112,14 +112,14 @@ public class RegisterUser {
 //		wallet.put("appUser", user);
 //		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
 		
-		RegistrationRequest registrationRequest = new RegistrationRequest("team1");
+		RegistrationRequest registrationRequest = new RegistrationRequest("team");
 		registrationRequest.setAffiliation("org1.department1");
-		registrationRequest.setEnrollmentID("team1");
+		registrationRequest.setEnrollmentID("team");
 		String enrollmentSecret = caClient.register(registrationRequest, admin);
-		Enrollment enrollment = caClient.enroll("team1", enrollmentSecret);
+		Enrollment enrollment = caClient.enroll("team", enrollmentSecret);
 		Identity user = Identities.newX509Identity("Org1MSP", adminIdentity.getCertificate(),
 				adminIdentity.getPrivateKey());
-		wallet.put("team1", user);
+		wallet.put("team", user);
 		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
 	}
 

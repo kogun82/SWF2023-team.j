@@ -37,17 +37,17 @@ public class ClientApp {
 
 			// get the network and contract
 			Network network = gateway.getNetwork("mychannel");
-			Contract contract = network.getContract("fabcar");
+			Contract contract = network.getContract("geno");
 
 			byte[] result;
 
-			result = contract.evaluateTransaction("queryAllCars");
-//			System.out.println(new String(result));
-
-			contract.submitTransaction("createCar", "gene1", "ch1", "AGTC", "InDel", "SNP");
-
-			result = contract.evaluateTransaction("queryCar", "gene1");
+			result = contract.evaluateTransaction("queryAllGene");
 			System.out.println(new String(result));
+
+//			contract.submitTransaction("createCar", "gene1", "ch1", "AGTC", "InDel", "SNP");
+//
+//			result = contract.evaluateTransaction("queryCar", "gene1");
+//			System.out.println(new String(result));
 
 //			contract.submitTransaction("changeCarOwner", "CAR10", "Archie");
 
