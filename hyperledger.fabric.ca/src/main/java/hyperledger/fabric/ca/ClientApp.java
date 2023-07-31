@@ -30,7 +30,7 @@ public class ClientApp {
 				"peerOrganizations", "org1.example.com", "connection-org1.yaml");
 
 		Gateway.Builder builder = Gateway.createBuilder();
-		builder.identity(wallet, "appUser").networkConfig(networkConfigPath).discovery(true);
+		builder.identity(wallet, "team").networkConfig(networkConfigPath).discovery(true);
 
 		// create a gateway connection
 		try (Gateway gateway = builder.connect()) {
@@ -42,19 +42,19 @@ public class ClientApp {
 			byte[] result;
 
 			result = contract.evaluateTransaction("queryAllCars");
-			System.out.println(new String(result));
-
-			contract.submitTransaction("createCar", "CAR10", "VW", "Polo", "Grey", "Mary");
-
-//			result = contract.evaluateTransaction("queryCar", "CAR10");
 //			System.out.println(new String(result));
+
+			contract.submitTransaction("createCar", "gene1", "ch1", "AGTC", "InDel", "SNP");
+
+			result = contract.evaluateTransaction("queryCar", "gene1");
+			System.out.println(new String(result));
 
 //			contract.submitTransaction("changeCarOwner", "CAR10", "Archie");
 
-			result = contract.evaluateTransaction("queryCar", "CAR10");
-			System.out.println("**");
-			System.out.println(new String(result));
-			System.out.println("**");
+//			result = contract.evaluateTransaction("queryCar", "CAR10");
+//			System.out.println("**");
+//			System.out.println(new String(result));
+//			System.out.println("**");
 		}
 	}
 

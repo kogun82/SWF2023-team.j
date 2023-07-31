@@ -21,6 +21,7 @@ public class ClientTest {
 	@DisplayName("register user..")
 	public void register() throws Exception {
 		RegisterUser.main(null);
+//		ClientApp.main(null);
 	}
 
 	@Disabled

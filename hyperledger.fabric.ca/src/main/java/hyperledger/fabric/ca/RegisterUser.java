@@ -59,7 +59,7 @@ public class RegisterUser {
 
 			@Override
 			public String getName() {
-				return "admin";
+				return "team";
 			}
 
 			@Override
@@ -74,7 +74,7 @@ public class RegisterUser {
 
 			@Override
 			public String getAffiliation() {
-				return "org1.department1";
+				return "org1.department2";
 			}
 
 			@Override
@@ -102,14 +102,24 @@ public class RegisterUser {
 
 		// Register the user, enroll the user, and import the new identity into the
 		// wallet.
+//		RegistrationRequest registrationRequest = new RegistrationRequest("appUser");
+//		registrationRequest.setAffiliation("org1.department1");
+//		registrationRequest.setEnrollmentID("appUser1");
+//		String enrollmentSecret = caClient.register(registrationRequest, admin);
+//		Enrollment enrollment = caClient.enroll("appUser1", enrollmentSecret);
+//		Identity user = Identities.newX509Identity("Org1MSP", adminIdentity.getCertificate(),
+//				adminIdentity.getPrivateKey());
+//		wallet.put("appUser1", user);
+//		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
+		
 		RegistrationRequest registrationRequest = new RegistrationRequest("appUser");
-		registrationRequest.setAffiliation("org1.department1");
-		registrationRequest.setEnrollmentID("appUser");
+		registrationRequest.setAffiliation("org1.department2");
+		registrationRequest.setEnrollmentID("team");
 		String enrollmentSecret = caClient.register(registrationRequest, admin);
-		Enrollment enrollment = caClient.enroll("appUser", enrollmentSecret);
+		Enrollment enrollment = caClient.enroll("team", enrollmentSecret);
 		Identity user = Identities.newX509Identity("Org1MSP", adminIdentity.getCertificate(),
 				adminIdentity.getPrivateKey());
-		wallet.put("appUser", user);
+		wallet.put("team", user);
 		System.out.println("Successfully enrolled user \"appUser\" and imported it into the wallet");
 	}
 
