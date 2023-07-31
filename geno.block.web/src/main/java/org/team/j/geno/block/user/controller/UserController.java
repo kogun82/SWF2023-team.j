@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author wangho
  *
  */
+@RequestMapping(value = "user")
 @Controller
 public class UserController {
 
@@ -17,8 +18,8 @@ public class UserController {
 	 * @ModifiedHistory : 
 	 */
 	@RequestMapping(value = "/")
-	public String main() {
+	public String user() {
 		
-		return null;
+		return "user/data_list";
 	}
 }
