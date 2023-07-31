@@ -29,6 +29,7 @@ public class RegisterUser {
 		System.setProperty("org.hyperledger.fabric.sdk.service_discovery.as_localhost", "true");
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws Exception {
 
 		// Create a CA client for interacting with the CA.
