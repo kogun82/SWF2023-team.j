@@ -21,7 +21,7 @@ nvm use v12.22.12
 ```
 sudo chmod 666 /var/run/docker.sock
 
-docker run -d --name portainer -p 8000:8000 -p 9443:9443 -p 9090:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /BiO/docker/portainer:/data --restart=always portainer/portainer-ce:latest
+docker run -d --name portainer -p 8000:8000 -p 9443:9443 -p 9090:9000 -v /var/run/docker.sock:/var/run/docker.sock -v /Users/kogun82/Documents/docker/portainer:/data --restart=always portainer/portainer-ce:latest
 
 docker container start 4c90e25db6ea
 docker build ./ -t compose
