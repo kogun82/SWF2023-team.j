@@ -9,30 +9,58 @@ function getData(){
 		async : false,
 		success : function(result){
 			
+			console.log(Object.keys(result))
 			console.log(result)
+			console.log(result["uniquList"])
 			
 			let listStr = ""
 			
-			result.forEach(function(element){
-				listStr += "<li id='" + element['Key'] + "'>"
-	            listStr +=      "<a href='#'>"
-	            listStr +=          "<div class='dataL_item'>"
-	            listStr +=              "<div class='data_info'>"
-	            listStr +=                  "<span>VCF ID</span>"
-	            listStr +=                  "<strong>" + element['Key'] + "</strong>"
-	            listStr +=                  "<ul class='myData_info'>"
-	            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
-	            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
-	            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
-	            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
-	            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
-	            listStr +=                  "</ul>"
-	            listStr +=              "</div>"
-	            listStr +=          "</div>"
-	            listStr +=      "</a>"
-	            listStr +=      "<button type='button' class='signBtn'><span class='sr-only'>Reposrt</span></button>"
-	            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
-	            listStr +=  "</li>"
+			JSON.parse(result["res"]).forEach(function(element){
+				result["uniquList"].forEach(function(unique){
+		            if(element['Key'] == unique){
+						
+						listStr += "<li id='" + element['Key'] + "'>"
+			            listStr +=      "<a href='#'>"
+			            listStr +=          "<div class='dataL_item'>"
+			            listStr +=              "<div class='data_info'>"
+			            listStr +=                  "<span>VCF ID</span>"
+			            listStr +=                  "<strong>" + element['Key'] + "</strong>"
+			            listStr +=                  "<ul class='myData_info'>"
+			            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
+			            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
+			            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
+			            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
+			            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
+			            listStr +=                  "</ul>"
+			            listStr +=              "</div>"
+			            listStr +=          "</div>"
+			            listStr +=      "</a>"
+			            listStr +=      "<button type='button' class='signBtn2' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Reposrt</span></button>"
+			            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+			            listStr +=  "</li>"
+					}else{
+						listStr += "<li id='" + element['Key'] + "'>"
+			            listStr +=      "<a href='#'>"
+			            listStr +=          "<div class='dataL_item'>"
+			            listStr +=              "<div class='data_info'>"
+			            listStr +=                  "<span>VCF ID</span>"
+			            listStr +=                  "<strong>" + element['Key'] + "</strong>"
+			            listStr +=                  "<ul class='myData_info'>"
+			            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
+			            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
+			            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
+			            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
+			            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
+			            listStr +=                  "</ul>"
+			            listStr +=              "</div>"
+			            listStr +=          "</div>"
+			            listStr +=      "</a>"
+			            listStr +=      "<button type='button' class='signBtn' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Reposrt</span></button>"
+			            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+			            listStr +=  "</li>"
+						
+					}
+				})	
 			})
 			
 			document.querySelector(".data_list").innerHTML = listStr
@@ -45,6 +73,27 @@ function report(report_url){
 		
 		window.open(report_url, '_blank', 'noopener, noreferrer');
 	}
+}
+
+function certification(geno_key){
+	
+	$.ajax({
+		
+		url : getContextPath() + "/user/certification",
+		data : {genoKey : geno_key},
+		type : "POST",
+		success : function(result){
+			console.log(result)
+			if(result){
+				alert("Certification Complete")
+			}else{
+				console.log("Regist Failed")
+			}
+		},
+		error : function(){
+			console.log("error")
+		}
+	})
 }
 
 $(function(){

@@ -223,7 +223,9 @@
 .data_listWrap .data_list.mydata>li:hover,
 .data_listWrap .data_list.mydata>li.on{background:#f8f9fa}
 .data_listWrap .data_list.mydata>li .myData_table{display:none;background:#fff}
-
+.data_listWrap .data_list>li .removeBtn{position:absolute;right:.8rem;top:1.8rem}
+.data_listWrap .data_list>li .linkBtn{position:absolute;right:2.8rem;top:1.4rem}
+.data_listWrap .data_list>li .signBtn{position:absolute;right:5.3rem;top:1.4rem}signBtn
 .select_custom{display:inline-block;position:relative}
 .select_custom:after{content:"";position:absolute;right:.2rem;top:50%;margin-top:-.15rem;border-width:.3rem .25rem 0;border-style:solid;border-color:#222 transparent transparent}
 .select_custom select{padding-right:1rem}

@@ -4,12 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.team.j.geno.block.api.client.HyperledgerFabricAPIClient;
 
@@ -44,7 +47,7 @@ public class UserController {
 	 */
 	@ResponseBody
 	@RequestMapping(value = "get_data")
-	public String getData() {
+	public Map<String, Object> getData() {
 
 		List<String> dataList = new ArrayList<String>();
 
@@ -70,6 +73,19 @@ public class UserController {
 
 		String res = client.userGenes("teamj");
 
-		return res;
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("res", res);
+		map.put("uniquList", uniqueList);
+		
+		return map;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "certification")
+	public String certification(@RequestParam(value = "genoKey", required = true)String genoKey) {
+		
+		System.out.println(genoKey);
+		
+		return genoKey;
 	}
 }
