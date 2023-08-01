@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#wrap{width:100%;min-width:900px;height:100%}
+#wrap{width:100%;min-width:600px;height:100%}
 
 /*** Layout : S ***/
 #userTop{position:fixed;top:-100%;left:0;width:100%;padding:.5rem 1.5rem .5rem 9.5rem;background:#fff}
@@ -100,10 +100,8 @@
 @media all and (max-width:1400px){
 
 }
-@media all and (min-width:1280px){
-    #nav{width:3.4rem}
-    #nav.on{width:9.5rem}
-    #nav.on + #container{margin-left:9.5rem}
+@media all and (min-width:900px){
+
 }
 @media all and (max-width:1279px){
     #nav{width:3.4rem}
