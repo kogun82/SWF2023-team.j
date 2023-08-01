@@ -23,7 +23,7 @@ public class DataAnalysisInstituteController {
 		return "analysis/analysis";
 	}
 	
-	@RequestMapping(value="/result")
+	@RequestMapping(value="/report")
 	public String result() {
 		
 		return "analysis/analysis_results";
