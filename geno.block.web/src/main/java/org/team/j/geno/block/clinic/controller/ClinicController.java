@@ -48,11 +48,11 @@ public class ClinicController {
 
 		log.debug("geneModel: {}", geneModel);
 
-		String geneNo = Utils.getInstance().getNewGeneNo();
+		String uid = Utils.getInstance().getNewUID();
 
 		GeneModel gene = new GeneModel();
-		gene.setGeneNo(geneNo);
-		gene.setUid(Utils.getInstance().getNewHash(geneNo));
+		gene.setGeneNo(Utils.getInstance().getNewHash(uid));
+		gene.setUid(uid);
 		gene.setName(geneModel.getName());
 		gene.setChr(geneModel.getChr());
 		gene.setVcf(geneModel.getVcf());

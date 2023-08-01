@@ -259,7 +259,7 @@ public class Utils {
 		return sha256;
 	}
 
-	public String getNewGeneNo() {
+	public String getNewUID() {
 		Random rand = new Random();
 		String geneNo = "GENE" + rand.nextInt(1000000);
 		return geneNo;
