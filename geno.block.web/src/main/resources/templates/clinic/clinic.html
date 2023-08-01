@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+    <meta name="title" content="GENOBLOCK">
+    <meta name="description" content="Blockchain-based personalized disease prevention management system">
+    <meta name="keyword" content="BLOCKCHAIN, GENOME, DISEASE">
+    <meta name="author" content="TEAM.J">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GENOBLOCK">
+    <meta property="og:site_name" content="GENOBLOCK">
+    <meta property="og:description" content="Blockchain-based personalized disease prevention management system">
+    <title>Clinic | Registration</title>
+    <!-- Common CSS -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/layout.css}">
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
+    <!-- Common JS -->
+    <script th:src="@{/js/jquery-1.12.4.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+    <script th:src="@{/js/jquery.textillate.js}"></script>
+    <script th:src="@{/js/jquery.lettering.js}"></script>
+
+    <!-- Sub JS -->
+    <script th:src="@{/js/slick.min.js}"></script>
+
+    <!-- Sub CSS -->
+    <link rel="stylesheet" th:href="@{/css/content.css}">
+
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="skip_nav">
+	    <a href="#content">The body go</a>
+	    <a href="#nav">Menu go</a>
+	</div>
+	<div id="wrap">
+	
+	    <!-- main : s -->
+	    <main id="container">
+	        <section id="content">
+	            <h2 class="blind">Content Area</h2>
+	            <div class="inner">
+	                <div class="topTitle type2" id="introTxt">
+	                    <div>
+	                        <h2>Registration of identification information</h2>
+	                        <p><span class="row r1">Manage your health through a personalized disease prevention management system </span> <span class="row r2">based on blockchain</span></p>
+	                        <script>
+	                            textEffect();   //text effect
+	                        </script>
+	                    </div>
+	                </div>
+	
+	                <article class="section">
+	                    <form id="id_infor" name="id_infor">
+	                        <fieldset class="alWrap">
+	                            <legend>Registration of identification information</legend>
+	                            <div class="inputWrap">
+	                                <div class="input_rowWrap">
+	                                    <div class="input_row">
+	                                        <div class="titInput">
+	                                            <label for="name">Patient Name</label>
+	                                            <input type="text" name="name" id="name" value="teamj">
+	                                        </div>
+	                                    </div>
+	                                    <div class="input_row">
+	                                        <div class="titInput">
+	                                            <label for="chr">Chromosome</label>
+	                                            <input type="text" name="chr" id="chr" value="chr1">
+	                                        </div>
+	                                    </div>
+	                                    <div class="input_row">
+	                                        <div class="titInput">
+	                                            <label for="vcf">VCF</label>
+	                                            <input type="text" name="vcf" id="vcf" value="chr1.vcf.gz">
+	                                        </div>
+	                                    </div>
+	                                    <div class="input_row">
+	                                        <div class="titInput">
+	                                            <label for="geneIDs">Gene IDs</label>
+	                                            <input type="text" name="geneIDs" id="geneIDs" value="MLH1, MSH2, MSH6, PMS2, EPCAM">
+	                                        </div>
+	                                    </div>
+	                                    <div class="input_row">
+	                                        <div class="titInput">
+	                                            <label for="reposrtURL">Report URL</label>
+	                                            <input type="text" name="reportURL" id="reportURL" value="https://www.genoblock.com/report/202308M1045">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="btnArea">
+	                                <button type="reset" class="btn def reset">Reset</button>
+	                                <button type="button" class="btn defBlack" onclick="register()">Save</button>
+	                            </div>
+	                        </fieldset>
+	                    </form>
+	                </article>
+	            </div>
+	        </section>
+	
+	        <!-- footer : s -->
+	        <footer id="footer">
+	            <p class="copyright">Copyright (C) 2021 By Korean Bioinformation Center(KOBIC). All Rights Reserved.</p>
+	        </footer>
+	        <!-- footer : e -->
+	    </main>
+	    <!-- main : e -->
+	</div>
+	<script th:src="@{/js/clinic.js}"></script>
+</body>
+</html>
