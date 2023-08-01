@@ -38,7 +38,7 @@ type QueryResult struct {
 // InitLedger adds a base set of cars to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
 	genes := []Gene{
-		Gene{UID: "3739a7c2-2acd-43cf-b75f-a61567f38269", Name: "teamj", Chr: "chr1", VCF: "TCGA-55-6543.vcf", GeneIDs: "BRCA1, GSTP1, p16INK4A, cyclin", ReportURL: "none", RegistDate: "2023-08-01 12:55:39", ModifyDate: "2023-08-01 12:55:39"},
+		Gene{UID: "1d1331633c99d4dbce6c99fbd5b9bcb5cb090bfa7bd674dfb4d1b44f990387c8", Name: "teamj", Chr: "chr1", VCF: "TCGA-55-6543.vcf", GeneIDs: "BRCA1, GSTP1, p16INK4A, cyclin", ReportURL: "none", RegistDate: "2023-08-01 12:55:39", ModifyDate: "2023-08-01 12:55:39"},
 	}
 
 	for i, gene := range genes {

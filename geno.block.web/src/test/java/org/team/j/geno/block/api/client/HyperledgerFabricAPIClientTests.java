@@ -23,7 +23,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(client.enrollAdmin());
 	}
 
-//	@Test
+	@Test
 	public void register() {
 
 		UserModel user = new UserModel();
@@ -42,7 +42,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-	@Test
+//	@Test
 	public void insert() {
 
 		String geneNo = Utils.getInstance().getNewGeneNo();
