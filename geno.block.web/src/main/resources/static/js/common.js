@@ -62,13 +62,12 @@ function modal(){
 
     btn.on("click",function(){
         var t = $(this);
-
-        if(t.siblings(".modal_layer").is(":hidden")){
+        if($("#modal_layer").is(":hidden")){
             $("html").css("overflow-y","hidden");
-            t.addClass("on").siblings(".modal_layer").fadeIn("fast");
+            $("#modal_layer").fadeIn("fast");
         }else{
             $("html").removeAttr("style");
-            t.removeClass("on").siblings(".modal_layer").fadeOut("fast");
+            $("#modal_layer").fadeOut("fast");
         }
     });
 

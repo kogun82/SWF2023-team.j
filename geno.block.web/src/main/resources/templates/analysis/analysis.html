@@ -65,7 +65,7 @@
                 <article class="section">
                     <ul class="gly_list">
                         <li>
-                            <a href="#">
+                            <a href="#" class="modalBtn">
                                 <div class="gly_item">
                                     <div class="gly_img">
                                         <img src="../images/content/img_sample_2.jpg" alt="">
@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="modalBtn">
                                 <div class="gly_item">
                                     <div class="gly_img">
                                         <img src="../images/content/img_sample_3.jpg" alt="">
@@ -104,45 +104,23 @@
     <!-- main : e -->
 
     <!-- Execute modal popup : s -->
-    <div class="modal_layer">
+    <div class="modal_layer" id="modal_layer">
         <div class="modal_layerWrap">
             <div class="modalBox">
-                <form>
-                    <h3 class="title">Execute</h3>
+                <form method="POST">
+                    <h3 class="title">Genoblock ID</h3>
                     <div class="execWrap">
                         <div class="inputWrap">
                             <div class="input_rowWrap">
                                 <div class="input_row">
-                                    <!-- 중복이 아닌 경우(inputBtn_box에 green 클래스 추가) : s -->
-                                    <div class="inputBtn_box green">
-                                        <div class="inputBox">
-                                            <input type="text" name="projectName" id="projectName" title="Project Name" placeholder="Project Name">
-                                        </div>
-                                        <button type="button" class="dup_btn">Duplicate Check</button>
-                                    </div>
-                                    <!-- 중복이 아닌 경우 : e -->
-
-                                    <!-- 중복인 경우(inputBtn_box에 red 클래스 추가) : s -->
-                                    <!--<div class="inputBtn_box red">
-                                        <div class="inputBox">
-                                            <input type="text" name="projectName" id="projectName" title="Project Name" placeholder="Project Name">
-                                        </div>
-                                        <button type="button" class="dup_btn">Duplicate Check</button>
-                                    </div>-->
-                                    <!-- 중복인 경우 : e -->
-                                </div>
-                                <div class="input_row">
-                                    <input type="text" name="projectDesc" id="projectDesc" title="Project Description" placeholder="Project Description">
-                                </div>
-                                <div class="input_row">
-                                    <input type="text" name="kwd" id="kwd" title="Keyword" placeholder="Keyword">
+                                    <input type="text" name="genoId" id="genoId" title="ID">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal_btnArea right">
                         <button type="reset" class="btn def resetBtn">Clear</button>
-                        <button type="submit" class="btn defBlack">Apply</button>
+                        <button type="button" class="btn defBlack" onclick="request()">Apply</button>
                     </div>
                 </form>
             </div>
@@ -153,5 +131,6 @@
     </div>
     <!-- Execute modal popup : e -->
 </div>
+	<script th:src="@{/js/analysis.js}"></script>
 </body>
 </html>
