@@ -16,63 +16,38 @@ function getData(){
 			let listStr = ""
 			
 			JSON.parse(result["res"]).forEach(function(element){
-				result["uniquList"].forEach(function(unique){
-		            if(element['Key'] == unique){
-						
-						listStr += "<li id='" + element['Key'] + "'>"
-			            listStr +=      "<a href='#'>"
-			            listStr +=          "<div class='dataL_item'>"
-			            listStr +=              "<div class='data_info'>"
-			            listStr +=                  "<span>VCF ID</span>"
-			            listStr +=                  "<strong>" + element['Key'] + "</strong>"
-			            listStr +=                  "<ul class='myData_info'>"
-			            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
-			            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
-			            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
-			            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
-			            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
-			            listStr +=                  "</ul>"
-			            listStr +=              "</div>"
-			            listStr +=          "</div>"
-			            listStr +=      "</a>"
-			            listStr +=      "<button type='button' class='signBtn2' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Report</span></button>"
-			            if(element['Record']['report_url'] == "none"){
-							
-			            listStr +=      "<button type='button' class='linkBtn' ><span class='sr-only'>Remove</span></button>"
-						}else{
-							
-			            listStr +=      "<button type='button' class='linkBtn2' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
-						}
-			            listStr +=  "</li>"
-					}else{
-						listStr += "<li id='" + element['Key'] + "'>"
-			            listStr +=      "<a href='#'>"
-			            listStr +=          "<div class='dataL_item'>"
-			            listStr +=              "<div class='data_info'>"
-			            listStr +=                  "<span>VCF ID</span>"
-			            listStr +=                  "<strong>" + element['Key'] + "</strong>"
-			            listStr +=                  "<ul class='myData_info'>"
-			            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
-			            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
-			            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
-			            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
-			            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
-			            listStr +=                  "</ul>"
-			            listStr +=              "</div>"
-			            listStr +=          "</div>"
-			            listStr +=      "</a>"
-			            listStr +=      "<button type='button' class='signBtn' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Report</span></button>"
-			            if(element['Record']['report_url'] == "none"){
-							
-			            listStr +=      "<button type='button' class='linkBtn' ><span class='sr-only'>Remove</span></button>"
-						}else{
-							
-			            listStr +=      "<button type='button' class='linkBtn2' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
-						}
-			            listStr +=  "</li>"
-						
-					}
-				})	
+				listStr += "<li id='" + element['Key'] + "'>"
+	            listStr +=      "<a href='#'>"
+	            listStr +=          "<div class='dataL_item'>"
+	            listStr +=              "<div class='data_info'>"
+	            listStr +=                  "<span>VCF ID</span>"
+	            listStr +=                  "<strong>" + element['Key'] + "</strong>"
+	            listStr +=                  "<ul class='myData_info'>"
+	            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
+	            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"
+	            listStr +=                      "<li>vcf : " + element['Record']['vcf'] + "</li>"
+	            listStr +=                      "<li>genes : " + element['Record']['gene_ids'] + "</li>"
+	            listStr +=                      "<li>regist date : " + element['Record']['regist_date'] + "</li>"
+	            listStr +=                  "</ul>"
+	            listStr +=              "</div>"
+	            listStr +=          "</div>"
+	            listStr +=      "</a>"
+	            if(result["uniquList"].includes(element['Key'])){
+					
+	            listStr +=      "<button type='button' class='signBtn2' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Report</span></button>"
+				}else{
+	            listStr +=      "<button type='button' class='signBtn'><span class='sr-only'>Report</span></button>"
+					
+				}
+	            if(element['Record']['report_url'] == "none"){
+					
+	            listStr +=      "<button type='button' class='linkBtn' ><span class='sr-only'>Remove</span></button>"
+				}else{
+					
+	            listStr +=      "<button type='button' class='linkBtn2' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+				}
+	            listStr +=  "</li>"
+					
 			})
 			
 			document.querySelector(".data_list").innerHTML = listStr
