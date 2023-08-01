@@ -12,7 +12,7 @@ function register(){
 		success : function(result){
 			
 			if(result){
-				console.log("Regist Complete")
+				alert("Regist Complete")
 			}else{
 				console.log("Regist Failed")
 			}
