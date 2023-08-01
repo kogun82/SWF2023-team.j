@@ -9,6 +9,8 @@ function getData(){
 		async : false,
 		success : function(result){
 			
+			console.log(result)
+			
 			let listStr = ""
 			
 			result.forEach(function(element){
@@ -17,7 +19,7 @@ function getData(){
 	            listStr +=          "<div class='dataL_item'>"
 	            listStr +=              "<div class='data_info'>"
 	            listStr +=                  "<span>VCF ID</span>"
-	            listStr +=                  "<strong>" + element['Record']['uid'] + "</strong>"
+	            listStr +=                  "<strong>" + element['Key'] + "</strong>"
 	            listStr +=                  "<ul class='myData_info'>"
 	            listStr +=                      "<li>patient name : " + element['Record']['name'] + "</li>"
 	            listStr +=                      "<li>chromosome : " + element['Record']['chr'] + "</li>"

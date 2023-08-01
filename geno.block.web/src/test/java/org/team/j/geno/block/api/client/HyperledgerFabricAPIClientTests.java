@@ -23,7 +23,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(client.enrollAdmin());
 	}
 
-	@Test
+//	@Test
 	public void register() {
 
 		UserModel user = new UserModel();
@@ -42,14 +42,14 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-//	@Test
+	@Test
 	public void insert() {
 
-		String geneNo = Utils.getInstance().getNewGeneNo();
+		String uid = Utils.getInstance().getNewUID();
 
 		GeneModel gene = new GeneModel();
-		gene.setGeneNo(geneNo);
-		gene.setUid(Utils.getInstance().getNewHash(geneNo));
+		gene.setGeneNo(Utils.getInstance().getNewHash(uid));
+		gene.setUid(uid);
 		gene.setName("teamj");
 		gene.setChr("chr2");
 		gene.setVcf("TCGA-55-6543.vcf");
