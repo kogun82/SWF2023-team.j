@@ -11,11 +11,10 @@ function register(){
 		async : false,
 		success : function(result){
 			
-			console.log(result)
 			if(result){
-				console.log("!1")
+				console.log("Regist Complete")
 			}else{
-				console.log("@2")
+				console.log("Regist Failed")
 			}
 		}
 	})
