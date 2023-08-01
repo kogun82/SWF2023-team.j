@@ -41,7 +41,7 @@ public class ClinicController {
 	 */
 	@ResponseBody
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String register(@ModelAttribute("id_info") GeneModel geneModel) {
+	public Boolean register(@ModelAttribute("id_info") GeneModel geneModel) {
 		
 		System.out.println("geneModel : " + geneModel);
 		
@@ -56,7 +56,7 @@ public class ClinicController {
 		gene.setRegistDate(Utils.getInstance().getCurruntTime());
 		gene.setModifyDate(Utils.getInstance().getCurruntTime());
 
-		String res = client.insertGenes(gene);
+		Boolean res = client.insertGenes(gene);
 		
 		System.out.println("res : " + res);
 		

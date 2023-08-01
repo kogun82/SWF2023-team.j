@@ -1,6 +1,7 @@
 package org.team.j.geno.block.api.client;
 
 import org.json.simple.JSONObject;
+import org.springframework.stereotype.Component;
 import org.team.j.geno.block.model.GeneModel;
 import org.team.j.geno.block.model.UserModel;
 import org.team.j.geno.block.url.GenoBlockURL;
@@ -9,6 +10,7 @@ import org.team.j.geno.block.utils.Utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+@Component
 public class HyperledgerFabricAPIClient {
 
 	private Gson gson;

@@ -56,8 +56,8 @@ public class HyperledgerFabricAPIClientTests {
 		gene.setRegistDate(Utils.getInstance().getCurruntTime());
 		gene.setModifyDate(Utils.getInstance().getCurruntTime());
 
-		String res = client.insertGenes(gene);
-		log.debug(res);
+		Boolean res = client.insertGenes(gene);
+		log.debug(res.toString());
 	}
 
 //	@Test

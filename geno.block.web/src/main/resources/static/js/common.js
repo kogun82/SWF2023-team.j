@@ -47,6 +47,14 @@ function resultSlide(){
     });
 }
 
+// 컨텍스트 페스
+function getContextPath(){
+	
+	const hostIndex = location.href.indexOf(location.host) + location.host.length
+	
+	return location.href.substring(hostIndex, location.href.indexOf("/", hostIndex + 1))
+}
+
 $(function(){
     loadClass();    //로딩 후 클래스 추가
     resultSlide();  //데이터 분석 결과 페이지 이미지 슬라이드
