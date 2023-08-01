@@ -51,7 +51,7 @@ public class HyperledgerFabricAPIClientTests {
 		gene.setGeneNo(Utils.getInstance().getNewHash(uid));
 		gene.setUid(uid);
 		gene.setName("teamj");
-		gene.setChr("chr2");
+		gene.setChr("chr21");
 		gene.setVcf("TCGA-55-6543.vcf");
 		gene.setGeneIDs("MLH1, MSH2, MSH6, PMS2, EPCAM");
 		gene.setReportURL("none");
