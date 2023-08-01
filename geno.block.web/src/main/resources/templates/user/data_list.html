@@ -34,24 +34,11 @@
     <![endif]-->
 </head>
 <body>
-<div id="skip_nav">
-    <a href="#content">The body go</a>
-    <a href="#nav">Menu go</a>
-</div>
 <div id="wrap">
     <!-- user top button : s -->
-    <div id="userTop">
-        <ul class="userBtn_area">
-            <li>
-                <a href="#" class="btn logout">Logout</a>
-            </li>
-        </ul>
-    </div>
     <!-- user top button : e -->
 
     <!-- Navigation : s -->
-    <th:block th:insert="menu.html">
-	</th:block>
     <!-- Navigation : e -->
 
     <!-- main : s -->
@@ -61,8 +48,8 @@
             <div class="inner">
                 <div class="topTitle type2" id="introTxt">
                     <div>
-                        <h2>Genome and BLockchain</h2>
-                        <p><span class="row r1">Manage your health through a personalized disease prevention management system </span> <span class="row r2">based on blockchain</span></p>
+                        <h2>Personal Genome Blockchain</h2>
+                        <p><span class="row r1">Blockchain could help ensure anonymity by providing a decentralized identity management system </span> <span class="row r2">that doesn't require the disclosure of personal information.</span></p>
                         <script>
                             textEffect();   //text effect
                         </script>
@@ -72,7 +59,6 @@
                 <article class="section">
                     <div class="data_listWrap">
                         <div class="data_listTop">
-                            <button type="button" class="btn defBlack edge modalBtn">Regist</button>
                             <!-- Data regist popup : S -->
                             <div class="modal_layer">
                                 <div class="modal_layerWrap">
@@ -132,256 +118,23 @@
                             <li>
                                 <a href="#">
                                     <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list1.jpg);"></div>
                                         <div class="data_info">
-                                            <span>Primate Resource</span>
-                                            <strong>Pathologic diagnosis and veterinary clinical care</strong>
+                                            <span>VCF ID</span>
+                                            <strong>3739a7c2-2acd-43cf-b75f-a61567f38269</strong>
                                             <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
+                                                <li>patient name : teamj</li>
+                                                <li>chromosome : chr1</li>
+                                                <li>vcf : TCGA-55-6543.vcf</li>
+                                                <li>gene_ids : BRCA1, GSTP1, p16INK4A, cyclin</li>
+                                                <li>regist date : 2023-08-01 12:55:39</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list2.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>Biological Resource</span>
-                                            <strong>Development of brain disease models</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list3.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>Laboratory Animal Resource</span>
-                                            <strong>Understanding the immunologic mechanisms in immunization</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list4.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>ABS Research Support</span>
-                                            <strong>Neuroscience and behavioral science</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list5.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>International Biological Materia</span>
-                                            <strong>Veterinary clinical diagnosis and care for nonhuman primates</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list6.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>Primate Resource</span>
-                                            <strong>Pathologic diagnosis and veterinary clinical care</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list7.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>Biological Resource</span>
-                                            <strong>Development of brain disease models</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list8.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>Laboratory Animal Resource</span>
-                                            <strong>Understanding the immunologic mechanisms in immunization</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list9.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>ABS Research Support</span>
-                                            <strong>Neuroscience and behavioral science</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="dataL_item">
-                                        <div class="thumb" style="background-image:url(images/content/sample_list10.jpg);"></div>
-                                        <div class="data_info">
-                                            <span>International Biological Materia</span>
-                                            <strong>Veterinary clinical diagnosis and care for nonhuman primates</strong>
-                                            <ul class="myData_info">
-                                                <li>version : ver1.5</li>
-                                                <li>registor : test</li>
-                                                <li>regist date : 2020.12.10</li>
-                                                <li>current status : Analysis</li>
-                                                <li>exe count : 3458</li>
-                                                <li class="exp">description :
-                                                    The center shares its expertise on primate with researchers in other fields including geonomics, cerebral nerve science and drug dynamics.
-                                                    We are providing service to maintain SPF primates including individual training through workshop on the monitoring, quarantine and management
-                                                    from microorganism perspective and training to those including veterinarian and keeper who deal with primates
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                                <button type="button" class="removeBtn"><span class="sr-only">Remove</span></button>
+                                <button type="button" class="signBtn"><span class="sr-only">Remove</span></button>
+                                <button type="button" class="linkBtn"><span class="sr-only">Remove</span></button>
                             </li>
                         </ul>
-                    </div>
-
-                    <div class="paging">
-                        <a href="#" class="first"><span class="sr-only">First</span></a>
-                        <a href="#" class="prev"><span class="sr-only">Previous</span></a>
-                        <a href="#">1</a>
-                        <strong>2</strong>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#" class="next"><span class="sr-only">Next</span></a>
-                        <a href="#" class="last"><span class="sr-only">Last</span></a>
                     </div>
                 </article>
             </div>
@@ -389,7 +142,7 @@
 
         <!-- footer : s -->
         <footer id="footer">
-            <p class="copyright">Copyright (C) 2021 By Korean Bioinformation Center(KOBIC). All Rights Reserved.</p>
+            <p class="copyright">Copyright (C) JJok-jam. All Rights Reserved.</p>
         </footer>
         <!-- footer : e -->
     </main>

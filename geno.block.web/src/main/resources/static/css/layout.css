@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#wrap{width:100%;min-width:1280px;height:100%}
+#wrap{width:100%;min-width:900px;height:100%}
 
 /*** Layout : S ***/
 #userTop{position:fixed;top:-100%;left:0;width:100%;padding:.5rem 1.5rem .5rem 9.5rem;background:#fff}
@@ -45,13 +45,13 @@
 #nav #gnb>li>a.on:after{top:0;height:100%}
 #nav #gnb>li>a>.menuItem>span{display:block;margin-left:1rem;vertical-align:middle}
 
-#container{margin:2.8rem 0 0 3.4rem;height:calc(100vh - 3rem);transition:all .6s ease;overflow-y:auto}
+#container{margin:2rem 2rem 0 2rem;height:calc(100vh - 3rem);transition:all .6s ease;overflow-y:auto}
 #container .section{margin-top:2rem}
 #container .section:first-of-type{margin-top:0}
 #nav:hover + #container,
 #nav.on + #container{margin-left:9.5rem}
 
-#content{padding:0 1.5rem 0 2rem;min-height:calc(100vh - 8.5rem)}
+#content{min-height:calc(100vh - 8.5rem)}
 .inner{width:100%;max-width:calc(100% - 8.5rem);margin:0 auto 0 0}
 
 .topTitle{position:relative;height:14.9rem;margin-bottom:2.5rem;border-radius:.5rem;overflow:hidden}
@@ -103,7 +103,6 @@
 @media all and (min-width:1280px){
     #nav{width:3.4rem}
     #nav.on{width:9.5rem}
-    #container{margin-left:3.4rem}
     #nav.on + #container{margin-left:9.5rem}
 }
 @media all and (max-width:1279px){
