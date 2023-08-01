@@ -35,8 +35,14 @@ function getData(){
 			            listStr +=              "</div>"
 			            listStr +=          "</div>"
 			            listStr +=      "</a>"
-			            listStr +=      "<button type='button' class='signBtn2' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Reposrt</span></button>"
-			            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+			            listStr +=      "<button type='button' class='signBtn2' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Report</span></button>"
+			            if(element['Record']['report_url'] == "none"){
+							
+			            listStr +=      "<button type='button' class='linkBtn' ><span class='sr-only'>Remove</span></button>"
+						}else{
+							
+			            listStr +=      "<button type='button' class='linkBtn2' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+						}
 			            listStr +=  "</li>"
 					}else{
 						listStr += "<li id='" + element['Key'] + "'>"
@@ -55,8 +61,14 @@ function getData(){
 			            listStr +=              "</div>"
 			            listStr +=          "</div>"
 			            listStr +=      "</a>"
-			            listStr +=      "<button type='button' class='signBtn' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Reposrt</span></button>"
-			            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+			            listStr +=      "<button type='button' class='signBtn' onclick='certification(\"" + element['Key'] + "\")'><span class='sr-only'>Report</span></button>"
+			            if(element['Record']['report_url'] == "none"){
+							
+			            listStr +=      "<button type='button' class='linkBtn' ><span class='sr-only'>Remove</span></button>"
+						}else{
+							
+			            listStr +=      "<button type='button' class='linkBtn2' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
+						}
 			            listStr +=  "</li>"
 						
 					}
