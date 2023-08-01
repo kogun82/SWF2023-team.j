@@ -51,6 +51,8 @@ public class DataAnalysisInstituteController {
 		
 		System.out.println(genoId);
 		
+		
+		
 		return genoId;
 	}
 }
