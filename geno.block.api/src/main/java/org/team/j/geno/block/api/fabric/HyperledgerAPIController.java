@@ -226,7 +226,7 @@ public class HyperledgerAPIController {
 
 	@ResponseBody
 	@PostMapping(value = "/insert_gene")
-	public boolean insertGene(@RequestBody GeneModel geneModel) {
+	public String insertGene(@RequestBody GeneModel geneModel) {
 
 		boolean res = true;
 
@@ -256,7 +256,7 @@ public class HyperledgerAPIController {
 			res = false;
 		}
 
-		return res;
+		return String.valueOf(res);
 	}
 
 	@ResponseBody

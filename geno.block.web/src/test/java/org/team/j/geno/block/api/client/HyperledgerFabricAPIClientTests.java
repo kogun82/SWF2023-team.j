@@ -42,7 +42,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-//	@Test
+	@Test
 	public void insert() {
 
 		GeneModel gene = new GeneModel();
@@ -56,8 +56,8 @@ public class HyperledgerFabricAPIClientTests {
 		gene.setRegistDate(Utils.getInstance().getCurruntTime());
 		gene.setModifyDate(Utils.getInstance().getCurruntTime());
 
-		Boolean res = client.insertGenes(gene);
-		log.debug(res.toString());
+		String res = client.insertGenes(gene);
+		log.debug(res);
 	}
 
 //	@Test
@@ -66,7 +66,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-	@Test
+//	@Test
 	public void select() {
 		String res = client.selectGeneNo("teamj", "GENE0");
 		log.debug(res);

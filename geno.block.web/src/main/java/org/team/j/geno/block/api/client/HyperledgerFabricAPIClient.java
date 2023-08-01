@@ -57,14 +57,14 @@ public class HyperledgerFabricAPIClient {
 		return res;
 	}
 
-	public boolean insertGenes(GeneModel geneModel) {
+	public String insertGenes(GeneModel geneModel) {
 
 		String json = gson.toJson(geneModel);
 		String url = String.format(GenoBlockURL.INSERT_GENES);
 
 		Object obj = Utils.getInstance().doPost(url, json);
 
-		boolean res = (boolean) obj;
+		String res = (String) obj;
 
 		return res;
 	}

@@ -4693,3 +4693,669 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2023-08-01 16:04:20.782  INFO 100 --- [http-nio-1818-exec-8] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 38, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
 2023-08-01 16:04:22.867 DEBUG 100 --- [http-nio-1818-exec-8] o.t.j.g.b.a.f.HyperledgerAPIController   : 
 2023-08-01 16:04:28.875  INFO 100 --- [pool-17-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-17-thread-1 
+2023-08-01 17:01:52.700  INFO 100 --- [http-nio-1818-exec-10] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:01:52.801  INFO 100 --- [http-nio-1818-exec-10] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 47, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:01:53.075  INFO 100 --- [http-nio-1818-exec-10] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 46, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:01:53.077  INFO 100 --- [http-nio-1818-exec-10] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 50, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:01:55.177 DEBUG 100 --- [http-nio-1818-exec-10] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:01:55.178  INFO 100 --- [pool-21-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-21-thread-1 
+2023-08-01 17:03:24.015  INFO 100 --- [http-nio-1818-exec-2] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:03:24.116  INFO 100 --- [http-nio-1818-exec-2] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 56, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:03:24.385  INFO 100 --- [http-nio-1818-exec-2] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 55, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:03:24.387  INFO 100 --- [http-nio-1818-exec-2] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 59, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:03:26.459 DEBUG 100 --- [http-nio-1818-exec-2] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:03:32.477  INFO 100 --- [pool-25-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-25-thread-1 
+2023-08-01 17:18:25.091  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:18:25.197  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 65, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:18:25.465  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 64, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:18:25.467  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 68, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:18:27.549 DEBUG 100 --- [http-nio-1818-exec-4] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:18:33.570  INFO 100 --- [pool-29-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-29-thread-1 
+2023-08-01 17:19:09.506  INFO 100 --- [http-nio-1818-exec-5] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:19:09.612  INFO 100 --- [http-nio-1818-exec-5] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 74, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:19:09.883  INFO 100 --- [http-nio-1818-exec-5] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 73, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:19:09.885  INFO 100 --- [http-nio-1818-exec-5] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 77, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:19:11.960 DEBUG 100 --- [http-nio-1818-exec-5] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:19:17.979  INFO 100 --- [pool-33-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-33-thread-1 
+2023-08-01 17:28:26.549  INFO 100 --- [http-nio-1818-exec-8] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:28:26.665  INFO 100 --- [http-nio-1818-exec-8] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 83, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:28:26.917  INFO 100 --- [http-nio-1818-exec-8] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 82, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:28:26.919  INFO 100 --- [http-nio-1818-exec-8] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 86, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:28:28.995 DEBUG 100 --- [http-nio-1818-exec-8] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:28:35.012  INFO 100 --- [pool-37-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-37-thread-1 
+2023-08-01 17:29:08.021  INFO 100 --- [http-nio-1818-exec-9] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:29:08.118  INFO 100 --- [http-nio-1818-exec-9] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 92, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:29:08.367  INFO 100 --- [http-nio-1818-exec-9] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 91, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:29:08.369  INFO 100 --- [http-nio-1818-exec-9] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 92, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:29:10.431 DEBUG 100 --- [http-nio-1818-exec-9] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:29:16.433  INFO 100 --- [pool-41-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-41-thread-1 
+2023-08-01 17:31:33.538  INFO 100 --- [http-nio-1818-exec-1] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:31:33.636  INFO 100 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 101, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:31:33.898  INFO 100 --- [http-nio-1818-exec-1] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 100, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:31:33.899  INFO 100 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 101, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:31:35.984 DEBUG 100 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:31:42.002  INFO 100 --- [pool-45-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-45-thread-1 
+2023-08-01 17:33:32.736  INFO 100 --- [http-nio-1818-exec-3] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:33:32.836  INFO 100 --- [http-nio-1818-exec-3] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 110, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:33:33.089  INFO 100 --- [http-nio-1818-exec-3] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 109, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:33:33.091  INFO 100 --- [http-nio-1818-exec-3] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 110, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:33:35.160 DEBUG 100 --- [http-nio-1818-exec-3] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:33:41.165  INFO 100 --- [pool-49-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-49-thread-1 
+2023-08-01 17:34:14.843  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:34:14.939  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 119, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:34:15.191  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 118, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:34:15.193  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 122, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:34:17.262 DEBUG 100 --- [http-nio-1818-exec-4] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:34:23.273  INFO 100 --- [pool-53-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-53-thread-1 
+2023-08-01 17:36:54.283  INFO 100 --- [http-nio-1818-exec-6] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:36:54.387  INFO 100 --- [http-nio-1818-exec-6] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 128, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:36:54.642  INFO 100 --- [http-nio-1818-exec-6] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 127, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:36:54.643  INFO 100 --- [http-nio-1818-exec-6] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 131, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:36:56.719 DEBUG 100 --- [http-nio-1818-exec-6] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:37:02.730  INFO 100 --- [pool-57-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-57-thread-1 
+2023-08-01 17:39:30.897  INFO 100 --- [http-nio-1818-exec-8] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:39:31.002  INFO 100 --- [http-nio-1818-exec-8] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 137, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:39:31.287  INFO 100 --- [http-nio-1818-exec-8] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 136, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:39:31.289  INFO 100 --- [http-nio-1818-exec-8] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 140, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:39:33.362 DEBUG 100 --- [http-nio-1818-exec-8] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:39:39.371  INFO 100 --- [pool-61-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-61-thread-1 
+2023-08-01 17:39:56.101  INFO 100 --- [http-nio-1818-exec-9] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:39:56.198  INFO 100 --- [http-nio-1818-exec-9] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 146, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:39:56.463  INFO 100 --- [http-nio-1818-exec-9] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 145, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:39:56.464  INFO 100 --- [http-nio-1818-exec-9] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 146, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:39:58.538 DEBUG 100 --- [http-nio-1818-exec-9] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:40:04.545  INFO 100 --- [pool-65-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-65-thread-1 
+2023-08-01 17:40:18.606  INFO 100 --- [http-nio-1818-exec-1] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:40:18.702  INFO 100 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 155, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:40:18.953  INFO 100 --- [http-nio-1818-exec-1] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 154, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:40:18.954  INFO 100 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 158, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:40:21.024 DEBUG 100 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:40:27.040  INFO 100 --- [pool-69-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-69-thread-1 
+2023-08-01 17:40:37.542  INFO 100 --- [http-nio-1818-exec-3] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:40:37.637  INFO 100 --- [http-nio-1818-exec-3] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 164, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:40:37.886  INFO 100 --- [http-nio-1818-exec-3] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 163, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:40:37.888  INFO 100 --- [http-nio-1818-exec-3] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 164, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:40:39.953 DEBUG 100 --- [http-nio-1818-exec-3] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:40:45.973  INFO 100 --- [pool-73-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-73-thread-1 
+2023-08-01 17:41:12.846  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:41:12.957  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 173, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:41:13.213  INFO 100 --- [http-nio-1818-exec-4] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 172, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:41:13.215  INFO 100 --- [http-nio-1818-exec-4] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 173, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:41:15.285 DEBUG 100 --- [http-nio-1818-exec-4] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:41:21.303  INFO 100 --- [pool-77-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-77-thread-1 
+2023-08-01 17:45:47.003  INFO 100 --- [http-nio-1818-exec-6] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:45:47.099  INFO 100 --- [http-nio-1818-exec-6] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 182, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:45:47.349  INFO 100 --- [http-nio-1818-exec-6] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 181, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:45:47.351  INFO 100 --- [http-nio-1818-exec-6] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 185, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:45:49.434 DEBUG 100 --- [http-nio-1818-exec-6] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:45:55.435  INFO 100 --- [pool-81-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-81-thread-1 
+2023-08-01 17:46:37.916  INFO 100 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 12 deletions, 0 modifications)
+2023-08-01 17:46:37.931  INFO 100 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 17:46:37.934  INFO 100 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 17:46:37.946  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.947  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-7-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.948  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-11-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.950  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-15-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.951  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-19-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.952  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-23-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.953  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-27-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.954  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-31-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.955  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-35-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.956  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-39-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.957  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-43-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.958  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-47-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.959  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-51-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.960  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-55-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.961  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-59-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.962  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-63-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.962  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-67-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.963  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-71-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.964  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-75-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.965  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-79-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.966  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-83-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.967  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-81-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.968  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-81-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.969  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-81-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.970  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-81-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:37.971  WARN 100 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-81-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:46:46.627  INFO 100 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 17:46:46.633  INFO 100 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 100 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 17:46:46.633 DEBUG 100 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 17:46:46.633  INFO 100 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 17:46:47.140  INFO 100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 17:46:47.144  INFO 100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 17:46:47.247  INFO 100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 17:46:47.248  INFO 100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 17:46:47.248  INFO 100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 17:46:47.277  INFO 100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 17:46:47.277  INFO 100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 638 ms
+2023-08-01 17:46:47.395  INFO 100 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@59a9db8b]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 17:46:47.430  INFO 100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 17:46:47.445  INFO 100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 17:46:47.454  INFO 100 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 0.888 seconds (JVM running for 6910.2)
+2023-08-01 17:46:47.457  INFO 100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.servlet.multipart.enabled) found different value in property 'enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-08-01 17:46:47.466  INFO 100 --- [cluster-ClusterId{value='64c8c677ee590c5ecd9cfc2b', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:14625}] to 211.188.69.213:27818
+2023-08-01 17:46:47.466  INFO 100 --- [cluster-rtt-ClusterId{value='64c8c677ee590c5ecd9cfc2b', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:14626}] to 211.188.69.213:27818
+2023-08-01 17:46:47.467  INFO 100 --- [cluster-ClusterId{value='64c8c677ee590c5ecd9cfc2b', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38046385}
+2023-08-01 17:46:51.055  INFO 100 --- [RMI TCP Connection(127)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-01 17:46:51.061  INFO 100 --- [RMI TCP Connection(127)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 17:47:06.166  INFO 7828 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 17:47:06.246  INFO 7828 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 7828 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 17:47:06.246 DEBUG 7828 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 17:47:06.247  INFO 7828 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 17:47:06.308  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 17:47:06.308  INFO 7828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 17:47:07.001  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 17:47:07.017  INFO 7828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 17:47:07.916  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 17:47:07.931  INFO 7828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 17:47:07.932  INFO 7828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 17:47:08.052  INFO 7828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 17:47:08.052  INFO 7828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1743 ms
+2023-08-01 17:47:08.697  INFO 7828 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5297509a]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 17:47:08.780  INFO 7828 --- [cluster-rtt-ClusterId{value='64c8c68c65b0fd683ed0a671', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14627}] to 211.188.69.213:27818
+2023-08-01 17:47:08.782  INFO 7828 --- [cluster-ClusterId{value='64c8c68c65b0fd683ed0a671', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14628}] to 211.188.69.213:27818
+2023-08-01 17:47:08.783  INFO 7828 --- [cluster-ClusterId{value='64c8c68c65b0fd683ed0a671', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38122738}
+2023-08-01 17:47:09.009  INFO 7828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 17:47:09.052  INFO 7828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 17:47:09.068  INFO 7828 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 3.436 seconds (JVM running for 9.649)
+2023-08-01 17:47:33.476  INFO 7828 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 17:47:33.476  INFO 7828 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-01 17:47:33.477  INFO 7828 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-01 17:47:33.780  WARN 7828 --- [http-nio-1818-exec-1] o.hyperledger.fabric.sdk.helper.Config   : Failed to load any configuration from: config.properties. Using toolkit defaults
+2023-08-01 17:47:33.934  INFO 7828 --- [http-nio-1818-exec-1] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:47:35.039  INFO 7828 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 2, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:47:35.470  INFO 7828 --- [http-nio-1818-exec-1] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 1, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:47:35.478  INFO 7828 --- [http-nio-1818-exec-1] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 5, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:47:37.597 DEBUG 7828 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:47:43.618  INFO 7828 --- [pool-1-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-1-thread-1 
+2023-08-01 17:48:19.431  INFO 7828 --- [http-nio-1818-exec-2] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:48:19.544  INFO 7828 --- [http-nio-1818-exec-2] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 11, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:48:19.835  INFO 7828 --- [http-nio-1818-exec-2] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 10, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:48:19.837  INFO 7828 --- [http-nio-1818-exec-2] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 14, name: peer0.org2.example.com:9051, channelName: mychannel, url: grpcs://localhost:9051, mspid: Org2MSP}
+2023-08-01 17:48:21.915 DEBUG 7828 --- [http-nio-1818-exec-2] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:48:27.926  INFO 7828 --- [pool-5-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-5-thread-1 
+2023-08-01 17:49:14.068  INFO 7828 --- [http-nio-1818-exec-5] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:49:14.190  INFO 7828 --- [http-nio-1818-exec-5] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 20, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:49:14.484  INFO 7828 --- [http-nio-1818-exec-5] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 19, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:49:14.487  INFO 7828 --- [http-nio-1818-exec-5] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 20, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:49:16.569 DEBUG 7828 --- [http-nio-1818-exec-5] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:49:22.574  INFO 7828 --- [pool-9-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-9-thread-1 
+2023-08-01 17:50:50.367  INFO 7828 --- [http-nio-1818-exec-7] org.hyperledger.fabric.gateway.Gateway   : Unable to load channel configuration from connection profile: Channel configuration has no channels defined.
+2023-08-01 17:50:50.477  INFO 7828 --- [http-nio-1818-exec-7] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 29, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:50:50.750  INFO 7828 --- [http-nio-1818-exec-7] org.hyperledger.fabric.sdk.Channel       : Channel Channel{id: 28, name: mychannel} eventThread started shutdown: false  thread: null 
+2023-08-01 17:50:50.752  INFO 7828 --- [http-nio-1818-exec-7] o.h.fabric.sdk.ServiceDiscovery          : Channel mychannel doing discovery with peer: Peer{ id: 29, name: peer0.org1.example.com, channelName: mychannel, url: grpcs://localhost:7051, mspid: Org1MSP}
+2023-08-01 17:50:52.823 DEBUG 7828 --- [http-nio-1818-exec-7] o.t.j.g.b.a.f.HyperledgerAPIController   : 
+2023-08-01 17:50:58.830  INFO 7828 --- [pool-13-thread-1] org.hyperledger.fabric.sdk.Channel       : Channel mychannel eventThread shutting down. shutdown: true  thread: pool-13-thread-1 
+2023-08-01 17:51:48.975  INFO 7828 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-01 17:51:48.980  INFO 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 17:51:48.982  INFO 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 17:51:48.987  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.988  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-7-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.988  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-11-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.988  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-15-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.15.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.989  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-13-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.989  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-13-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.990  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-13-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.990  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-13-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:51:48.990  WARN 7828 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [geno] appears to have started a thread named [pool-13-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.15.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.15.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.15.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.15.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.15.1/java.lang.Thread.run(Thread.java:834)
+2023-08-01 17:53:21.204  INFO 8272 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 17:53:21.258  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 8272 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 17:53:21.258 DEBUG 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 17:53:21.259  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 17:53:21.297  INFO 8272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 17:53:21.298  INFO 8272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 17:53:21.731  INFO 8272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 17:53:21.741  INFO 8272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 17:53:22.332  INFO 8272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 17:53:22.343  INFO 8272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 17:53:22.344  INFO 8272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 17:53:22.432  INFO 8272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 17:53:22.448  INFO 8272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1150 ms
+2023-08-01 17:53:22.859  INFO 8272 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e2d68a]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 17:53:22.896  INFO 8272 --- [cluster-rtt-ClusterId{value='64c8c802326e7302b200d21f', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14629}] to 211.188.69.213:27818
+2023-08-01 17:53:22.896  INFO 8272 --- [cluster-ClusterId{value='64c8c802326e7302b200d21f', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14630}] to 211.188.69.213:27818
+2023-08-01 17:53:22.897  INFO 8272 --- [cluster-ClusterId{value='64c8c802326e7302b200d21f', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32981898}
+2023-08-01 17:53:23.052  INFO 8272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 17:53:23.080  INFO 8272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 17:53:23.090  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 2.237 seconds (JVM running for 7.91)
+2023-08-01 17:58:21.927  INFO 8272 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-08-01 17:58:21.934  INFO 8272 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 17:58:27.008  INFO 8272 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 17:58:27.009  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 8272 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 17:58:27.010 DEBUG 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 17:58:27.010  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 17:58:27.127  INFO 8272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 17:58:27.129  INFO 8272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 17:58:27.184  INFO 8272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 17:58:27.185  INFO 8272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 17:58:27.185  INFO 8272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 17:58:27.201  INFO 8272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 17:58:27.202  INFO 8272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2023-08-01 17:58:27.263  INFO 8272 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3e2d68a]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 17:58:27.281  INFO 8272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 17:58:27.289  INFO 8272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 17:58:27.294  INFO 8272 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 5.315 seconds (JVM running for 312.118)
+2023-08-01 17:58:27.296  INFO 8272 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 17:58:27.417  INFO 8272 --- [cluster-rtt-ClusterId{value='64c8c933326e7302b200d220', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:14632}] to 211.188.69.213:27818
+2023-08-01 17:58:27.422  INFO 8272 --- [cluster-ClusterId{value='64c8c933326e7302b200d220', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:14633}] to 211.188.69.213:27818
+2023-08-01 17:58:27.422  INFO 8272 --- [cluster-ClusterId{value='64c8c933326e7302b200d220', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8762071}
+2023-08-01 17:58:48.469  INFO 8272 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-08-01 17:58:48.474  INFO 8272 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 17:58:55.565  INFO 8581 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 17:58:55.613  INFO 8581 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 8581 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 17:58:55.613 DEBUG 8581 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 17:58:55.613  INFO 8581 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 17:58:55.648  INFO 8581 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 17:58:55.649  INFO 8581 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 17:58:56.033  INFO 8581 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 17:58:56.041  INFO 8581 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 17:58:56.573  INFO 8581 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 17:58:56.582  INFO 8581 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 17:58:56.582  INFO 8581 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 17:58:56.649  INFO 8581 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 17:58:56.650  INFO 8581 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2023-08-01 17:58:57.011  INFO 8581 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@56df737a]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 17:58:57.163  INFO 8581 --- [cluster-rtt-ClusterId{value='64c8c950a6e871050136db78', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14635}] to 211.188.69.213:27818
+2023-08-01 17:58:57.163  INFO 8581 --- [cluster-ClusterId{value='64c8c950a6e871050136db78', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14634}] to 211.188.69.213:27818
+2023-08-01 17:58:57.164  INFO 8581 --- [cluster-ClusterId{value='64c8c950a6e871050136db78', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=118017349}
+2023-08-01 17:58:57.194  INFO 8581 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 17:58:57.218  INFO 8581 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 17:58:57.228  INFO 8581 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 1.966 seconds (JVM running for 7.563)
