@@ -46,7 +46,7 @@ var haio_config = {
         "active": true
     },
     "haio_10":{//lungs
-        "hover": "LUNGS",
+        "hover": "LUNGS <br>The most relevant genes in lung cancer <br>described in this review include <br>the following: EGFR, KRAS, MET, LKB1, <br>BRAF, PIK3CA, ALK, RET, and ROS1. <br>Commonly identified genetic/genomic <br>alterations such as missense or <br>nonsense mutations, small insertions or <br>deletions, alternative splicing, <br>and chromosomal fusion rearrangements <br>were discussed.",
         "url": "https://www.humananatomyillustrations.com/", "target": "_self",
         "active": true
     },

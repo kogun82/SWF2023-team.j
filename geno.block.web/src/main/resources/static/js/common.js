@@ -104,7 +104,20 @@ function modal(){
     });
 }
 
+// 스크롤 체크
+function scrollChk(){
+    $("#container").scroll(function(){
+        var scroll = $(this).scrollTop();
+        if(scroll > 10){
+            $("#userTop").addClass("on");
+        }else{
+            $("#userTop").removeClass("on");
+        }
+    })
+}
+
 $(function(){
     loadClass();    //로딩 후 클래스 추가
     modal()
+    scrollChk();    //스크롤체크
 });

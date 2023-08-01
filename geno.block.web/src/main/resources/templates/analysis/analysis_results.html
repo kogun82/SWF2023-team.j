@@ -24,7 +24,7 @@
     <script th:src="@{/js/jquery.lettering.js}"></script>
 
     <!-- Sub JS -->
-<!--    <script th:src="@{/js/slick.min.js}"></script>-->
+    <script th:src="@{/js/slick.min.js}"></script>
     <script th:src="@{/js/haio-anatomy/anatomy-config.js}"></script>
     <script th:src="@{/js/haio-anatomy/anatomy-script.js}"></script>
 
@@ -83,21 +83,37 @@
                                 <div class="imgSlider">
                                     <div class="img_slider_for">
                                         <div>
-											<!--
-										    <th:block th:insert="refontcircos.html">
-											</th:block>
-											-->
+                                            <div>
+                                                <a href="#"><img th:src="@{/images/content/report.png}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"><img th:src="@{/images/content/report_2.png}" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_slider_nav">
+                                        <div>
+                                            <div>
+                                                <a href="#"><img th:src="@{/images/content/report.png}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <a href="#"><img th:src="@{/images/content/modela.png}" alt=""></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+						
                     </div>
-
 					<span id="tip-haio"></span>
-					<div id="haio-wrapper" style="opacity:0;"><!-- haio-v2.6 -->
+					<div id="haio-wrapper" style="opacity:0;">
 					  <div id="haio-basea">
-					    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 600" xml:space="preserve">
+					    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 900" xml:space="preserve">
 					      <image overflow="visible" width="420" height="600" xlink:href="/genoblock/images/content/modela.png" ></image>
 					      <path id="haio_17" class="trachea" fill="transparent" stroke="#8C8C8C" vector-effect="non-scaling-stroke" d="M237.471,153.46c0.1,3.699,0.433,12.221,0.542,14.206c-3.513-2.499-18.512-17.5-21.179-22.666s-8.5-5-12-1s-19.804,21.226-30.985,24.28c0.498-4.362,1.452-12.366,1.792-15.137c6.946,0.576,22.026-18.31,24.026-29.977s2.334-31.5,1.5-63.167c4.333-3.333,7-6.833,16,1.833c0.333,9.333-0.333,46.176,0.167,50.504S221.941,136.421,237.471,153.46z"/>
 					      <path id="haio_16" class="thyroid" fill="transparent" stroke="#8C8C8C" vector-effect="non-scaling-stroke" d="M219,32.833c2.334,0.5,6.253,1.596,4.461,15.682c-0.867,6.819-1.69,13.318-6.294,13.318 c-3.004-2.634-8.167-8.167-16-1.833c-0.792,0.875-1.803,1.016-2.72,0.573c-2.75-1.328-4.822-6.281-4.947-14.406 c-0.167-10.833,1.167-13,5-12.5c1.333,2.5,1.5,5.167,4.5,5.667s1.667,2.833,4.5,2.833s2.082-1.667,4.791-2 S218.666,39.667,219,32.833z"/>
@@ -118,8 +134,9 @@
 					      <path id="haio_2" class="bladder" fill="transparent" stroke="#8C8C8C" vector-effect="non-scaling-stroke" d="M212.125,480c13,0.625,24.938-4.903,32.125,4.001c11.104,13.757-5.875,27.624-11.625,31.749s-11.375,7-12.375,10s-2.5,19.375-2.375,22.5c-2.5-0.625-3.027-0.625-4.701,0c-0.049-3.5,0-19-1.799-22c-2.8-4.671-8.163-4.794-12.25-6.75c-11.75-5.625-22.25-22.125-16.25-33S199.125,479.375,212.125,480z"/>
 					      <path id="haio_1" class="appendix" fill="transparent" stroke="#8C8C8C" vector-effect="non-scaling-stroke" d="M156.188,448.938c4.563,2.313,5.764,17.821,5.563,20.125c-0.438,5,5.938,3.938,5.688-0.75c-0.192-3.6,0.007-20.563-8.25-27.125C155.5,442.875,156.563,446.875,156.188,448.938z"/>
 					    </svg>
-					  </div><!-- haio-basea-->
-					<div class="clear"></div>
+					  </div>
+					<div class="clear"></div>												
+
                     <!--<div class="dataR_section">
                         <div class="userArea">
                             <div class="userBox">
@@ -414,9 +431,6 @@
                         </div>
                     </div>-->
 
-                    <script>
-                        resultSlide(); //이미지 슬라이드
-                    </script>
                 </div>
             </div>
         </section>
@@ -429,5 +443,8 @@
     </main>
     <!-- main : e -->
 </div>
+<script>
+	window.addEventListener('onload', resultSlide())
+</script>
 </body>
 </html>
