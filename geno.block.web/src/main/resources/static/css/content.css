@@ -20,7 +20,7 @@
 .excBtn:hover,
 .tbl.type2 tr:hover .excBtn{animation:moveH .7s infinite linear}
 
-.thumb{display:inline-block;width:3.1rem;height:3.1rem;overflow:hidden;border-radius:1.15rem;background-size:cover}
+.thumb{display:inline-block;width:2.5rem;height:2.5rem;overflow:hidden;border-radius:1.15rem;background-size:cover}
 .tbl.type2 tbody tr td .thumb{transition:all .3s}
 .tbl.type2 tbody tr:hover td .thumb{-webkit-box-shadow:2px 2px 5px rgba(0,0,0,.3);-moz-box-shadow:2px 2px 5px rgba(0,0,0,.3);box-shadow:2px 2px 5px rgba(0,0,0,.3)}
 
@@ -81,7 +81,7 @@
 .data_listWrap .data_list>li>a:hover{background:#f8f9fa}
 .data_listWrap .data_list>li>a:hover:after{animation:line_move 2.5s infinite}
 .data_listWrap .data_list>li>a .dataL_item:after{content:"";display:block;clear:both}
-.data_listWrap .data_list>li>a .dataL_item .thumb{float:left;margin-right:1rem;width:3.1rem;height:3.1rem;overflow:hidden;border-radius:1.15rem;background-size:contain;transition:all .3s}
+.data_listWrap .data_list>li>a .dataL_item .thumb{float:left;margin-right:0.2rem;width:2.5rem;height:2.5rem;overflow:hidden;border-radius:1.15rem;background-size:contain;transition:all .3s}
 .data_listWrap .data_list>li>a:hover .dataL_item .thumb{-webkit-box-shadow:2px 2px 5px rgba(0,0,0,.3);-moz-box-shadow:2px 2px 5px rgba(0,0,0,.3);box-shadow:2px 2px 5px rgba(0,0,0,.3)}
 .data_listWrap .data_list>li>a .dataL_item .data_info{overflow:hidden;padding-top:.5rem}
 .data_listWrap .data_list>li>a .dataL_item .data_info span{display:block;color:#778F9B;font-size:.7rem;line-height:.9rem;margin-bottom:.1rem}
@@ -96,8 +96,9 @@
 .data_listWrap .data_list>li a .dataL_item .data_info .myData_info li:before{content:"";position:absolute;left:0;top:50%;margin-top:-0.075rem;width:0.15rem;height:0.15rem;background:#555;border-radius:50%}
 .data_listWrap .data_list>li a .dataL_item .data_info .myData_info li:first-child{margin-left:0;padding-left:0}
 .data_listWrap .data_list>li a .dataL_item .data_info .myData_info li:first-child:before{display:none}
-.data_listWrap .data_list>li .removeBtn{position:absolute;right:1.4rem;top:1.35rem}
-.data_listWrap .data_list>li .refreshBtn{position:absolute;right:3rem;top:1.35rem}
+.data_listWrap .data_list>li .removeBtn{position:absolute;right:.8rem;top:1.8rem}
+.data_listWrap .data_list>li .signBtn{position:absolute;right:2.8rem;top:1.4rem}
+.data_listWrap .data_list>li .linkBtn{position:absolute;right:5.3rem;top:1.4rem}
 
 .select_custom{display:inline-block;position:relative}
 .select_custom:after{content:"";position:absolute;right:.2rem;top:50%;margin-top:-.15rem;border-width:.3rem .25rem 0;border-style:solid;border-color:#222 transparent transparent}
@@ -267,7 +268,7 @@
 .inputWrap .title{display:block;margin:.8rem 0 .5rem;font-size:.7rem;color:#222;font-weight:600}
 .inputWrap .imgInput_wrap{margin-bottom:1rem}
 .inputWrap .imgInput_wrap .img_input{position:relative;display:inline-block;vertical-align:middle}
-.inputWrap .imgInput_wrap .img_input .thumb{position:relative;width:3.1rem;height:3.1rem;overflow:hidden;border-radius:1.15rem;text-align:center;margin:0 auto;border:1px solid #ccc;background:url(../images/common/img_default.jpg) center no-repeat;background-size:cover}
+.inputWrap .imgInput_wrap .img_input .thumb{position:relative;width:2.5rem;height:2.5rem;overflow:hidden;border-radius:1.15rem;text-align:center;margin:0 auto;border:1px solid #ccc;background:url(../images/common/img_default.jpg) center no-repeat;background-size:cover}
 .inputWrap .imgInput_wrap .img_input .thumb>div{position:absolute;left:0;top:0;width:100%;height:100%}
 .inputWrap .imgInput_wrap .img_input .thumb img{position:relative;left:100%;margin-left:-200%;height:100%;max-width:inherit}
 .inputWrap .imgInput_wrap label{display:block;width:1.5rem;height:1.5rem;position:absolute;right:-.5rem;bottom:-.5rem;border:1px solid #ccc;background:#fff url(../images/common/icon_camera.png) center no-repeat;border-radius:50%;cursor:pointer;-webkit-box-shadow:0 3px 6px rgba(0,0,0,.1);-moz-box-shadow:0 3px 6px rgba(0,0,0,.1);box-shadow:0 3px 6px rgba(0,0,0,.1)}
@@ -314,8 +315,9 @@ input.inputB:-ms-input-placeholder{font-size:.9rem;font-weight:bold}
 .addWrap .addBtnArea a:before{font-family:"xeicon"}
 .addWrap .addBtnArea .addBtn{border-width:1px 0 1px 1px;border-style:solid;border-color:#222;border-radius:3px 0 0 3px}
 .addWrap .addBtnArea .removeBtn{border-width:1px;border-style:solid;border-color:#222 #222 #222 #ccc;border-radius:0 3px 3px 0}
+.addWrap .addBtnArea .signBtn{border-width:1px;border-style:solid;border-color:#222 #222 #222 #ccc;border-radius:0 3px 3px 0}
+.addWrap .addBtnArea .linkBtn{border-width:1px;border-style:solid;border-color:#222 #222 #222 #ccc;border-radius:0 3px 3px 0}
 .addWrap .addBtnArea .addBtn:before{content:"\e913"}
-.addWrap .addBtnArea .removeBtn:before{content:"\e91a"}
 
 /* table wrap */
 .tbl_wrap{overflow:auto;max-width:47.5rem;max-height:32.5rem}
