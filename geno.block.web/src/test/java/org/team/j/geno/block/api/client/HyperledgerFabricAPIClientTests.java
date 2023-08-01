@@ -42,7 +42,7 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-	@Test
+//	@Test
 	public void insert() {
 
 		String uid = Utils.getInstance().getNewUID();
@@ -62,9 +62,9 @@ public class HyperledgerFabricAPIClientTests {
 		log.debug(res);
 	}
 
-//	@Test
+	@Test
 	public void update() {
-		String res = client.updateReportURL("teamj", "GENE0", "http://www.naver.com");
+		String res = client.updateReportURL("teamj", "056fdeeb1ea4a34e7058a595f900635b5f09a517b623376c6def98aab1c0cb05", "http://localhost:8080/genoblock/main/report");
 		log.debug(res);
 	}
 

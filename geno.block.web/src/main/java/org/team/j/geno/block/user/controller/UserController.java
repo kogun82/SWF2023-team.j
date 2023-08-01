@@ -86,6 +86,9 @@ public class UserController {
 		
 		System.out.println(genoKey);
 		
+		String res = client.updateReportURL("teamj", genoKey, "http://localhost:8080/genoblock/main/report");
+		System.out.println(res);
+		
 		return genoKey;
 	}
 }
