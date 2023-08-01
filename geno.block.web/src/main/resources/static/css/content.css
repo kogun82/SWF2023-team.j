@@ -123,19 +123,19 @@
 .dataReult_wrap .dataR_section .userArea .userBox .user_info .user_infoCon{display:table-cell;vertical-align:middle}
 .dataReult_wrap .dataR_section .userArea .userBox .user_info .user_infoCon a strong{color:#1588CF;font-size:.8rem;font-weight:400;margin-right: .3rem;transition:all .3s}
 .dataReult_wrap .dataR_section .userArea .userBox .user_info .user_infoCon a:hover strong{color:#18adfc}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info li{margin-top:.2rem;font-size:.6rem;color:#888}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info li{position:relative;margin-left:.6rem;padding-left:.6rem;float:left;font-size:.7rem;color:#888}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info li:before{content:"";position:absolute;left:0;top:50%;margin-top:-0.075rem;width:0.15rem;height:0.15rem;background:#555;border-radius:50%}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info li:first-child{margin-left:0;padding-left:0}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info li:first-child:before{display:none}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info li{margin-top:.2rem;font-size:.6rem;color:#888}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info li{position:relative;margin-left:.6rem;padding-left:.6rem;float:left;font-size:.7rem;color:#888}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info li:before{content:"";position:absolute;left:0;top:50%;margin-top:-0.075rem;width:0.15rem;height:0.15rem;background:#555;border-radius:50%}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info li:first-child{margin-left:0;padding-left:0}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info li:first-child:before{display:none}
 .dataReult_wrap .dataR_section .dataR_content{padding:.5rem 1.5rem}
 .dataReult_wrap .dataR_section .dataR_content .dataR_conInfo h3{font-size:.9rem;color:#222;font-weight:400}
 .dataReult_wrap .dataR_section .dataR_content .dataR_conInfo h3 a{transition:all .3s}
 .dataReult_wrap .dataR_section .dataR_content .dataR_conInfo h3 a:hover{color:#18adfc}
 .dataReult_wrap .dataR_section .dataR_content .dataR_conInfo p{margin-top:.3rem;font-size:.6rem;color:#888}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info{margin-top:.7rem}
-.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.result_info:after{content:"";display:block;clear:both}
-.dataReult_wrap .dataR_section .dataR_content .result_detail{margin:1.35rem 0;font-size:0.7rem;color:#666;line-height:1.1rem}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info{margin-top:.7rem}
+.dataReult_wrap .dataR_section .dataR_content .dataR_conInfo ul.report_info:after{content:"";display:block;clear:both}
+.dataReult_wrap .dataR_section .dataR_content .report_detail{margin:1.35rem 0;font-size:0.7rem;color:#666;line-height:1.1rem}
 .dataReult_wrap .dataR_section .commentsWrap{border-top:1px solid #ddd}
 .dataReult_wrap .dataR_section .commentsWrap .commentsTop{padding:.3rem 1.5rem}
 .dataReult_wrap .dataR_section .commentsWrap .commentsTop .cmtView{color:#222;font-size:.7rem;font-weight:500;height:1.7rem;padding:0 1rem;border-radius:1rem;transition:all .3s}
