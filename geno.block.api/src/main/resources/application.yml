@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  data:
+    mongodb:
+       uri: mongodb://cloud_team:kobic%21%40%23%24@211.188.69.213:27818/bio-express?authSource=admin
+  servlet:
+    multipart:
+      enabled: false
+  jmx:
+    enabled: false
+  main:
+    banner-mode: log
+  thymeleaf:
+    cache: false  
+
+logging:
+  file:
+    name: ${user.dir}/log/geno.block.log 
+    max-history: 7 
+    max-size: 10MB 
+  level:  
+    '[org.team.j]': debug
+    
+server:
+  port: 1818
+  servlet:
+    session:
+      timeout: 600000s
+    context-path: /geno

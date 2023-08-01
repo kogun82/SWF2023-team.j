@@ -1,0 +1,335 @@
+2023-08-01 08:30:33.677  INFO 70640 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:30:33.735  INFO 70640 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70640 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:30:33.736 DEBUG 70640 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:30:33.737  INFO 70640 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:30:33.774  INFO 70640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 08:30:33.774  INFO 70640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 08:30:34.182  INFO 70640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:30:34.191  INFO 70640 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:30:34.760  INFO 70640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:30:34.768  INFO 70640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:30:34.769  INFO 70640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:30:34.838  INFO 70640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/bx]     : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:30:34.838  INFO 70640 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1064 ms
+2023-08-01 08:30:35.207  INFO 70640 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@658a0404]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:30:35.237  INFO 70640 --- [cluster-rtt-ClusterId{value='64c8441bf724b97b080cb3e8', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14291}] to 211.188.69.213:27818
+2023-08-01 08:30:35.237  INFO 70640 --- [cluster-ClusterId{value='64c8441bf724b97b080cb3e8', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14292}] to 211.188.69.213:27818
+2023-08-01 08:30:35.238  INFO 70640 --- [cluster-ClusterId{value='64c8441bf724b97b080cb3e8', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27114888}
+2023-08-01 08:30:35.383  INFO 70640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:30:35.407  INFO 70640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/bx'
+2023-08-01 08:30:35.417  INFO 70640 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 2.104 seconds (JVM running for 7.806)
+2023-08-01 08:30:43.867  INFO 70640 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-01 08:30:43.874  INFO 70640 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:30:50.879  INFO 70652 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:30:50.925  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70652 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:30:50.926 DEBUG 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:30:50.926  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:30:50.959  INFO 70652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 08:30:50.960  INFO 70652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 08:30:51.346  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:30:51.354  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:30:51.902  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:30:51.911  INFO 70652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:30:51.912  INFO 70652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:30:51.979  INFO 70652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:30:51.979  INFO 70652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1019 ms
+2023-08-01 08:30:52.390  INFO 70652 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29bdb524]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:30:52.436  INFO 70652 --- [cluster-ClusterId{value='64c8442ca1dbd4016db6acf3', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14293}] to 211.188.69.213:27818
+2023-08-01 08:30:52.436  INFO 70652 --- [cluster-rtt-ClusterId{value='64c8442ca1dbd4016db6acf3', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14294}] to 211.188.69.213:27818
+2023-08-01 08:30:52.437  INFO 70652 --- [cluster-ClusterId{value='64c8442ca1dbd4016db6acf3', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33640430}
+2023-08-01 08:30:52.576  INFO 70652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:30:52.604  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:30:52.616  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 2.045 seconds (JVM running for 7.704)
+2023-08-01 08:30:55.323  INFO 70652 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 08:30:55.324  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-01 08:30:55.325  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-01 08:31:04.075  INFO 70652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-08-01 08:31:04.081  INFO 70652 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:31:04.082  INFO 70652 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 08:31:09.165  INFO 70652 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:31:09.168  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70652 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:31:09.168 DEBUG 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:31:09.168  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:31:09.289  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:31:09.291  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:31:09.346  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:31:09.347  INFO 70652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:31:09.347  INFO 70652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:31:09.363  INFO 70652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:31:09.364  INFO 70652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 194 ms
+2023-08-01 08:31:09.423  INFO 70652 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29bdb524]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:31:09.439  INFO 70652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:31:09.447  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:31:09.452  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 5.322 seconds (JVM running for 24.541)
+2023-08-01 08:31:09.453  INFO 70652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 08:31:09.509  INFO 70652 --- [cluster-ClusterId{value='64c8443da1dbd4016db6acf4', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:14295}] to 211.188.69.213:27818
+2023-08-01 08:31:09.510  INFO 70652 --- [cluster-ClusterId{value='64c8443da1dbd4016db6acf4', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11908999}
+2023-08-01 08:31:09.511  INFO 70652 --- [cluster-rtt-ClusterId{value='64c8443da1dbd4016db6acf4', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:14296}] to 211.188.69.213:27818
+2023-08-01 08:31:24.497  INFO 70652 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 08:31:24.498  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-01 08:31:24.499  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-08-01 08:31:24.504  WARN 70652 --- [http-nio-1818-exec-1] o.hyperledger.fabric.sdk.helper.Config   : Failed to load any configuration from: config.properties. Using toolkit defaults
+2023-08-01 08:31:24.779  WARN 70652 --- [http-nio-1818-exec-1] o.h.fabric_ca.sdk.helper.Config          : Failed to load any configuration from: config.properties. Using toolkit defaults
+2023-08-01 08:31:25.379 DEBUG 70652 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : Successfully enrolled user "admin" and imported it into the wallet
+2023-08-01 08:31:47.803 DEBUG 70652 --- [http-nio-1818-exec-2] o.t.j.g.b.a.f.HyperledgerAPIController   : An identity for the admin user "admin" already exists in the wallet
+2023-08-01 08:32:16.789 DEBUG 70652 --- [http-nio-1818-exec-3] o.t.j.g.b.a.f.HyperledgerAPIController   : An identity for the admin user "admin" already exists in the wallet
+2023-08-01 08:32:31.545  INFO 70652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-01 08:32:31.549  INFO 70652 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:32:31.549  INFO 70652 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 08:32:36.623  INFO 70652 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:32:36.625  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70652 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:32:36.626 DEBUG 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:32:36.626  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:32:36.725  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:32:36.727  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:32:36.780  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:32:36.780  INFO 70652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:32:36.781  INFO 70652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:32:36.799  INFO 70652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:32:36.799  INFO 70652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 171 ms
+2023-08-01 08:32:36.897  INFO 70652 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29bdb524]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:32:36.920  INFO 70652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:32:36.929  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:32:36.935  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 5.339 seconds (JVM running for 112.028)
+2023-08-01 08:32:36.938  INFO 70652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 08:32:36.955  INFO 70652 --- [cluster-ClusterId{value='64c84494a1dbd4016db6acf5', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:14297}] to 211.188.69.213:27818
+2023-08-01 08:32:36.955  INFO 70652 --- [cluster-rtt-ClusterId{value='64c84494a1dbd4016db6acf5', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:14298}] to 211.188.69.213:27818
+2023-08-01 08:32:36.956  INFO 70652 --- [cluster-ClusterId{value='64c84494a1dbd4016db6acf5', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13999858}
+2023-08-01 08:32:38.338  INFO 70652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-01 08:32:38.341  INFO 70652 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:32:38.429  INFO 70652 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:32:38.431  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70652 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:32:38.431 DEBUG 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:32:38.431  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:32:38.531  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:32:38.532  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:32:38.577  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:32:38.578  INFO 70652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:32:38.578  INFO 70652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:32:38.593  INFO 70652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:32:38.593  INFO 70652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2023-08-01 08:32:38.643  INFO 70652 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29bdb524]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:32:38.655  INFO 70652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:32:38.662  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:32:38.666  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 0.262 seconds (JVM running for 113.759)
+2023-08-01 08:32:38.667  INFO 70652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 08:32:38.794  INFO 70652 --- [cluster-rtt-ClusterId{value='64c84496a1dbd4016db6acf6', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:14299}] to 211.188.69.213:27818
+2023-08-01 08:32:38.843  INFO 70652 --- [cluster-ClusterId{value='64c84496a1dbd4016db6acf6', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:14300}] to 211.188.69.213:27818
+2023-08-01 08:32:38.843  INFO 70652 --- [cluster-ClusterId{value='64c84496a1dbd4016db6acf6', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=66332064}
+2023-08-01 08:32:41.351  INFO 70652 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 08:32:41.351  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-01 08:32:41.352  INFO 70652 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-01 08:32:41.354 DEBUG 70652 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : An identity for the admin user "admin" already exists in the wallet
+2023-08-01 08:32:51.605 DEBUG 70652 --- [http-nio-1818-exec-2] o.t.j.g.b.a.f.HyperledgerAPIController   : An identity for the admin user "admin" already exists in the wallet
+2023-08-01 08:32:59.239  INFO 70652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-01 08:32:59.242  INFO 70652 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:32:59.243  INFO 70652 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 08:33:04.330  INFO 70652 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:33:04.332  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70652 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:33:04.332 DEBUG 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:33:04.332  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:33:04.421  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:33:04.423  INFO 70652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:33:04.467  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:33:04.467  INFO 70652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:33:04.467  INFO 70652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:33:04.480  INFO 70652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:33:04.481  INFO 70652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2023-08-01 08:33:04.530  INFO 70652 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@29bdb524]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:33:04.546  INFO 70652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:33:04.554  INFO 70652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:33:04.559  INFO 70652 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 5.253 seconds (JVM running for 139.654)
+2023-08-01 08:33:04.560  INFO 70652 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 08:33:04.564  INFO 70652 --- [cluster-rtt-ClusterId{value='64c844b0a1dbd4016db6acf7', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:14301}] to 211.188.69.213:27818
+2023-08-01 08:33:04.564  INFO 70652 --- [cluster-ClusterId{value='64c844b0a1dbd4016db6acf7', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:14302}] to 211.188.69.213:27818
+2023-08-01 08:33:04.565  INFO 70652 --- [cluster-ClusterId{value='64c844b0a1dbd4016db6acf7', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13464482}
+2023-08-01 08:33:54.392  INFO 70652 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-01 08:33:54.395  INFO 70652 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:34:02.988  INFO 70808 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:34:03.039  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70808 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:34:03.039 DEBUG 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:34:03.039  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:34:03.074  INFO 70808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-01 08:34:03.074  INFO 70808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-01 08:34:03.511  INFO 70808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:34:03.521  INFO 70808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:34:04.073  INFO 70808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:34:04.082  INFO 70808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:34:04.082  INFO 70808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:34:04.149  INFO 70808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:34:04.149  INFO 70808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1074 ms
+2023-08-01 08:34:04.513  INFO 70808 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@109bd6f0]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:34:04.701  INFO 70808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:34:04.727  INFO 70808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:34:04.737  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 2.067 seconds (JVM running for 7.662)
+2023-08-01 08:34:04.880  INFO 70808 --- [cluster-rtt-ClusterId{value='64c844ece8ad297cc4077eba', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14304}] to 211.188.69.213:27818
+2023-08-01 08:34:04.880  INFO 70808 --- [cluster-ClusterId{value='64c844ece8ad297cc4077eba', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14303}] to 211.188.69.213:27818
+2023-08-01 08:34:04.881  INFO 70808 --- [cluster-ClusterId{value='64c844ece8ad297cc4077eba', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30804119}
+2023-08-01 08:34:06.425  INFO 70808 --- [http-nio-1818-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 08:34:06.425  INFO 70808 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-01 08:34:06.426  INFO 70808 --- [http-nio-1818-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-01 08:34:06.450  WARN 70808 --- [http-nio-1818-exec-1] o.hyperledger.fabric.sdk.helper.Config   : Failed to load any configuration from: config.properties. Using toolkit defaults
+2023-08-01 08:34:06.699  WARN 70808 --- [http-nio-1818-exec-1] o.h.fabric_ca.sdk.helper.Config          : Failed to load any configuration from: config.properties. Using toolkit defaults
+2023-08-01 08:34:07.278 DEBUG 70808 --- [http-nio-1818-exec-1] o.t.j.g.b.a.f.HyperledgerAPIController   : Successfully enrolled user "admin" and imported it into the wallet
+2023-08-01 08:34:18.231  INFO 70808 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-01 08:34:18.237  INFO 70808 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-01 08:34:18.238  INFO 70808 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-01 08:34:23.325  INFO 70808 --- [restartedMain] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.7.4)[0;39m
+
+
+2023-08-01 08:34:23.326  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Starting Application using Java 11.0.15.1 on kogun82-ui-MacBookPro.local with PID 70808 (/Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api/target/classes started by kogun82 in /Users/kogun82/Documents/workspace/SWF2023-team.j/geno.block.api)
+2023-08-01 08:34:23.326 DEBUG 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 08:34:23.327  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : No active profile set, falling back to 1 default profile: "default"
+2023-08-01 08:34:23.443  INFO 70808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-08-01 08:34:23.445  INFO 70808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2023-08-01 08:34:23.501  INFO 70808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1818 (http)
+2023-08-01 08:34:23.501  INFO 70808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-01 08:34:23.502  INFO 70808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 08:34:23.517  INFO 70808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/geno]   : Initializing Spring embedded WebApplicationContext
+2023-08-01 08:34:23.517  INFO 70808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2023-08-01 08:34:23.576  INFO 70808 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "x86_64", "version": "13.5"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='cloud_team', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@109bd6f0]}, clusterSettings={hosts=[211.188.69.213:27818], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-08-01 08:34:23.593  INFO 70808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-01 08:34:23.601  INFO 70808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1818 (http) with context path '/geno'
+2023-08-01 08:34:23.605  INFO 70808 --- [restartedMain] org.team.j.geno.block.api.Application    : Started Application in 5.314 seconds (JVM running for 26.531)
+2023-08-01 08:34:23.607  INFO 70808 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-01 08:34:23.625  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:14305}] to 211.188.69.213:27818
+2023-08-01 08:34:23.625  INFO 70808 --- [cluster-rtt-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:14306}] to 211.188.69.213:27818
+2023-08-01 08:34:23.626  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27823328}
+2023-08-01 09:04:05.214  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 211.188.69.213:27818
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method) ~[na:na]
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2023-08-01 09:04:15.219  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 211.188.69.213:27818
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 4 common frames omitted
+
+2023-08-01 09:04:30.314  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:14312}] to 211.188.69.213:27818
+2023-08-01 09:04:30.314  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23612951}
+2023-08-01 09:04:35.406  INFO 70808 --- [cluster-rtt-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:14313}] to 211.188.69.213:27818
+2023-08-01 09:13:55.087  INFO 70808 --- [cluster-rtt-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:14315}] to 211.188.69.213:27818
+2023-08-01 10:10:33.368  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server 211.188.69.213:27818
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method) ~[na:na]
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168) ~[na:na]
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2023-08-01 10:10:37.512  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:14322}] to 211.188.69.213:27818
+2023-08-01 10:10:37.512  INFO 70808 --- [cluster-ClusterId{value='64c844ffe8ad297cc4077ebb', description='null'}-211.188.69.213:27818] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=211.188.69.213:27818, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32292343}
