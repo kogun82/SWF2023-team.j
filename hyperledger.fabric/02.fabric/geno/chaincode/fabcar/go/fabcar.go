@@ -19,10 +19,14 @@ type SmartContract struct {
 
 // Car describes basic details of what makes up a car
 type Gene struct {
-	Name   string `json:"name"`
-	Age	   string `json:"age"`
-	Add    string `json:"add"`
-	Chr    string `json:"chr"`
+	UID			string `json:"uid"`
+	Name		string `json:"name"`
+	Chr			string `json:"chr"`
+	VCF			string `json:"vcf"`
+	GeneIDs		string `json:"gene_ids"`
+	ReportURL	string `json:"report_url"`
+	RegistDate	string `json:"regist_date"`
+	ModifyDate	string `json:"modify_date"`
 }
 
 // QueryResult structure used for handling result of query
@@ -34,7 +38,7 @@ type QueryResult struct {
 // InitLedger adds a base set of cars to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
 	genes := []Gene{
-		Gene{Name: "team.j", Age: "18", Add: "deajeon", Chr: "ch1"},
+		Gene{UID: "3739a7c2-2acd-43cf-b75f-a61567f38269", Name: "teamj", Chr: "chr1", VCF: "TCGA-55-6543.vcf", GeneIDs: "BRCA1, GSTP1, p16INK4A, cyclin", ReportURL: "none", RegistDate: "2023-08-01 12:55:39", ModifyDate: "2023-08-01 12:55:39"},
 	}
 
 	for i, gene := range genes {
@@ -50,12 +54,16 @@ func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) 
 }
 
 // CreateCar adds a new car to the world state with given details
-func (s *SmartContract) CreateGene(ctx contractapi.TransactionContextInterface, geneNumber string, name string, age string, add string, chr string) error {
+func (s *SmartContract) CreateGene(ctx contractapi.TransactionContextInterface, geneNumber string, uid string, name string, chr string, vcf string, gene_ids string, report_url string, regist_date string, modify_date string) error {
 	gene := Gene{
+		UID: uid,
 		Name: name,
-		Age: age,
-		Add: add,
 		Chr: chr,
+		VCF: vcf,
+		GeneIDs: gene_ids,
+		ReportURL: report_url,
+		RegistDate: regist_date,
+		ModifyDate: modify_date,
 	}
 
 	geneAsBytes, _ := json.Marshal(gene)
@@ -64,7 +72,7 @@ func (s *SmartContract) CreateGene(ctx contractapi.TransactionContextInterface, 
 }
 
 // QueryCar returns the car stored in the world state with given id
-func (s *SmartContract) QueryCar(ctx contractapi.TransactionContextInterface, geneNumber string) (*Gene, error) {
+func (s *SmartContract) QueryGene(ctx contractapi.TransactionContextInterface, geneNumber string) (*Gene, error) {
 	geneAsBytes, err := ctx.GetStub().GetState(geneNumber)
 
 	if err != nil {
@@ -113,14 +121,14 @@ func (s *SmartContract) QueryAllGene(ctx contractapi.TransactionContextInterface
 }
 
 // ChangeCarOwner updates the owner field of car with given id in world state
-func (s *SmartContract) ChangeChr(ctx contractapi.TransactionContextInterface, geneNumber string, newChr string) error {
-	gene, err := s.QueryCar(ctx, geneNumber)
+func (s *SmartContract) ChangeReportURL(ctx contractapi.TransactionContextInterface, geneNumber string, newReportURL string) error {
+	gene, err := s.QueryGene(ctx, geneNumber)
 
 	if err != nil {
 		return err
 	}
 
-	gene.Chr = newChr
+	gene.ReportURL = newReportURL
 
 	geneAsBytes, _ := json.Marshal(gene)
 

@@ -10,6 +10,11 @@ import java.net.URL;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Random;
+import java.util.UUID;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
@@ -225,5 +230,26 @@ public class Utils {
 		}
 
 		return res;
+	}
+	
+	public String getCurruntTime() {
+
+		Date now = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.KOREA);
+
+		return format.format(now);
+	}
+	
+	public String getNewUID() {
+
+		String rawID = UUID.randomUUID().toString();
+
+		return rawID;
+	}
+	
+	public String getNewGeneNo() {
+		Random rand = new Random();
+		String geneNo = "GENE" +  rand.nextInt(1000000);
+		return geneNo;
 	}
 }

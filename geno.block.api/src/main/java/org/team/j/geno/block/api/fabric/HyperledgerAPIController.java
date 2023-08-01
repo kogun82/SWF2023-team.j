@@ -1,14 +1,19 @@
 package org.team.j.geno.block.api.fabric;
 
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.PrivateKey;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.Set;
 
 import javax.annotation.PostConstruct;
 
+import org.hyperledger.fabric.gateway.Contract;
+import org.hyperledger.fabric.gateway.Gateway;
 import org.hyperledger.fabric.gateway.Identities;
 import org.hyperledger.fabric.gateway.Identity;
+import org.hyperledger.fabric.gateway.Network;
 import org.hyperledger.fabric.gateway.Wallet;
 import org.hyperledger.fabric.gateway.Wallets;
 import org.hyperledger.fabric.gateway.X509Identity;
@@ -24,8 +29,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.team.j.geno.block.api.constant.Constant;
+import org.team.j.geno.block.api.model.GeneModel;
 import org.team.j.geno.block.api.model.UserModel;
 
 import com.google.gson.Gson;
@@ -181,4 +188,150 @@ public class HyperledgerAPIController {
 		return true;
 	}
 
+	@ResponseBody
+	@PostMapping(value = "/user_genes")
+	public String userGenes(@RequestBody HashMap<String, Object> map) {
+
+		String name = (String) map.get("user_name");
+
+		String res = null;
+
+		try {
+			ClassPathResource resource = new ClassPathResource("src/main/resources/wallet");
+			Wallet wallet = Wallets.newFileSystemWallet(Paths.get(resource.getPath()));
+
+			Path networkConfigPath = Paths.get(Constant.BASE_DIR, "test-network", "organizations", "peerOrganizations",
+					"org1.example.com", "connection-org1.yaml");
+
+			Gateway.Builder builder = Gateway.createBuilder();
+			builder.identity(wallet, name).networkConfig(networkConfigPath).discovery(true);
+
+			try (Gateway gateway = builder.connect()) {
+
+				Network network = gateway.getNetwork("mychannel");
+				Contract contract = network.getContract("geno");
+
+				byte[] result;
+				result = contract.evaluateTransaction("queryAllGene");
+				res = new String(result);
+
+				log.debug(res);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return res;
+	}
+
+	@ResponseBody
+	@PostMapping(value = "/insert_gene")
+	public String insertGene(@RequestBody GeneModel geneModel) {
+
+		String res = null;
+
+		try {
+			ClassPathResource resource = new ClassPathResource("src/main/resources/wallet");
+			Wallet wallet = Wallets.newFileSystemWallet(Paths.get(resource.getPath()));
+
+			Path networkConfigPath = Paths.get(Constant.BASE_DIR, "test-network", "organizations", "peerOrganizations",
+					"org1.example.com", "connection-org1.yaml");
+
+			Gateway.Builder builder = Gateway.createBuilder();
+			builder.identity(wallet, geneModel.getName()).networkConfig(networkConfigPath).discovery(true);
+
+			try (Gateway gateway = builder.connect()) {
+
+				Network network = gateway.getNetwork("mychannel");
+				Contract contract = network.getContract("geno");
+
+				byte[] result;
+				result = contract.submitTransaction("createGene", geneModel.getGeneNo(), geneModel.getUid(),
+						geneModel.getName(), geneModel.getChr(), geneModel.getVcf(), geneModel.getGeneIDs(),
+						geneModel.getReportURL(), geneModel.getRegistDate(), geneModel.getModifyDate());
+				res = new String(result);
+
+				log.debug(res);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return res;
+	}
+
+	@ResponseBody
+	@PostMapping(value = "/update_report_url")
+	public String updateReportURL(@RequestBody HashMap<String, Object> map) {
+
+		String name = (String) map.get("name");
+		String geneNo = (String) map.get("gene_no");
+		String reportURL = (String) map.get("report_url");
+
+		String res = null;
+
+		try {
+			ClassPathResource resource = new ClassPathResource("src/main/resources/wallet");
+			Wallet wallet = Wallets.newFileSystemWallet(Paths.get(resource.getPath()));
+
+			Path networkConfigPath = Paths.get(Constant.BASE_DIR, "test-network", "organizations", "peerOrganizations",
+					"org1.example.com", "connection-org1.yaml");
+
+			Gateway.Builder builder = Gateway.createBuilder();
+			builder.identity(wallet, name).networkConfig(networkConfigPath).discovery(true);
+
+			try (Gateway gateway = builder.connect()) {
+
+				Network network = gateway.getNetwork("mychannel");
+				Contract contract = network.getContract("geno");
+
+				byte[] result;
+				result = contract.submitTransaction("changeReportURL", geneNo, reportURL);
+				res = new String(result);
+
+				log.debug(res);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return res;
+	}
+
+	@ResponseBody
+	@PostMapping(value = "/select_gene_no")
+	public String selectGeneNo(@RequestBody HashMap<String, Object> map) {
+
+		String name = (String) map.get("name");
+		String geneNo = (String) map.get("gene_no");
+
+		String res = null;
+
+		try {
+			ClassPathResource resource = new ClassPathResource("src/main/resources/wallet");
+			Wallet wallet = Wallets.newFileSystemWallet(Paths.get(resource.getPath()));
+
+			Path networkConfigPath = Paths.get(Constant.BASE_DIR, "test-network", "organizations", "peerOrganizations",
+					"org1.example.com", "connection-org1.yaml");
+
+			Gateway.Builder builder = Gateway.createBuilder();
+			builder.identity(wallet, name).networkConfig(networkConfigPath).discovery(true);
+
+			try (Gateway gateway = builder.connect()) {
+
+				Network network = gateway.getNetwork("mychannel");
+				Contract contract = network.getContract("geno");
+
+				byte[] result;
+				result = contract.evaluateTransaction("queryGene", geneNo);
+				res = new String(result);
+
+				log.debug(res);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return res;
+	}
 }
