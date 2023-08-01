@@ -57,5 +57,4 @@ function getContextPath(){
 
 $(function(){
     loadClass();    //로딩 후 클래스 추가
-    resultSlide();  //데이터 분석 결과 페이지 이미지 슬라이드
 });
