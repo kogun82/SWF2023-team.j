@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author wangho
  *
  */
-@RequestMapping(value = "analysis")
+@RequestMapping(value = "main")
 @Controller
 public class DataAnalysisInstituteController {
 
