@@ -226,9 +226,9 @@ public class HyperledgerAPIController {
 
 	@ResponseBody
 	@PostMapping(value = "/insert_gene")
-	public String insertGene(@RequestBody GeneModel geneModel) {
+	public boolean insertGene(@RequestBody GeneModel geneModel) {
 
-		String res = null;
+		boolean res = true;
 
 		try {
 			ClassPathResource resource = new ClassPathResource("src/main/resources/wallet");
@@ -249,12 +249,11 @@ public class HyperledgerAPIController {
 				result = contract.submitTransaction("createGene", geneModel.getGeneNo(), geneModel.getUid(),
 						geneModel.getName(), geneModel.getChr(), geneModel.getVcf(), geneModel.getGeneIDs(),
 						geneModel.getReportURL(), geneModel.getRegistDate(), geneModel.getModifyDate());
-				res = new String(result);
 
-				log.debug(res);
+				log.debug(new String(result));
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			res = false;
 		}
 
 		return res;
