@@ -1,3 +1,10 @@
 server:
   servlet:
     context-path: /genoblock
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  data:
+    mongodb:
+       uri: mongodb://cloud_team:kobic%21%40%23%24@211.188.69.213:27818/bio-express?authSource=admin
