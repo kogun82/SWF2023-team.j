@@ -45,9 +45,11 @@ public class HyperledgerFabricAPIClientTests {
 	@Test
 	public void insert() {
 
+		String geneNo = Utils.getInstance().getNewGeneNo();
+
 		GeneModel gene = new GeneModel();
-		gene.setGeneNo(Utils.getInstance().getNewGeneNo());
-		gene.setUid(Utils.getInstance().getNewUID());
+		gene.setGeneNo(geneNo);
+		gene.setUid(Utils.getInstance().getNewHash(geneNo));
 		gene.setName("teamj");
 		gene.setChr("chr2");
 		gene.setVcf("TCGA-55-6543.vcf");

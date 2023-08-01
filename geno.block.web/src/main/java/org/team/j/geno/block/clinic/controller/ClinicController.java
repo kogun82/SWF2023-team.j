@@ -10,44 +10,49 @@ import org.team.j.geno.block.api.client.HyperledgerFabricAPIClient;
 import org.team.j.geno.block.model.GeneModel;
 import org.team.j.geno.block.utils.Utils;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author wangho
  *
  */
+@Slf4j
 @RequestMapping(value = "clinic")
 @Controller
 public class ClinicController {
 
 	@Autowired
 	private HyperledgerFabricAPIClient client;
-	
+
 	/**
-	 * @Author          : wangho
-	 * @Date            : 2023. 8. 1.
-	 * @Description     : 
-	 * @ModifiedHistory : 
+	 * @Author : wangho
+	 * @Date : 2023. 8. 1.
+	 * @Description :
+	 * @ModifiedHistory :
 	 */
 	@RequestMapping(value = "/")
 	public String clinic() {
-		
+
 		return "clinic/clinic";
 	}
-	
+
 	/**
-	 * @Author          : wangho
-	 * @Date            : 2023. 8. 1.
-	 * @Description     :
-	 * @ModifiedHistory : 
+	 * @Author : wangho
+	 * @Date : 2023. 8. 1.
+	 * @Description :
+	 * @ModifiedHistory :
 	 */
 	@ResponseBody
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String register(@ModelAttribute("id_info") GeneModel geneModel) {
-		
-		System.out.println("geneModel : " + geneModel);
-		
+
+		log.debug("geneModel: {}", geneModel);
+
+		String geneNo = Utils.getInstance().getNewGeneNo();
+
 		GeneModel gene = new GeneModel();
-		gene.setGeneNo(Utils.getInstance().getNewGeneNo());
-		gene.setUid(Utils.getInstance().getNewUID());
+		gene.setGeneNo(geneNo);
+		gene.setUid(Utils.getInstance().getNewHash(geneNo));
 		gene.setName(geneModel.getName());
 		gene.setChr(geneModel.getChr());
 		gene.setVcf(geneModel.getVcf());
@@ -57,9 +62,9 @@ public class ClinicController {
 		gene.setModifyDate(Utils.getInstance().getCurruntTime());
 
 		String res = client.insertGenes(gene);
-		
-		System.out.println("res : " + res);
-		
+
+		log.debug("res: {}", res);
+
 		return res;
 	}
 }

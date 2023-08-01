@@ -7,14 +7,15 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.security.KeyManagementException;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
-import java.util.UUID;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
@@ -22,6 +23,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+import javax.xml.bind.DatatypeConverter;
 
 import com.google.gson.Gson;
 
@@ -231,7 +233,7 @@ public class Utils {
 
 		return res;
 	}
-	
+
 	public String getCurruntTime() {
 
 		Date now = new Date();
@@ -239,17 +241,27 @@ public class Utils {
 
 		return format.format(now);
 	}
-	
-	public String getNewUID() {
 
-		String rawID = UUID.randomUUID().toString();
+	public String getNewHash(String geneNo) {
 
-		return rawID;
+		MessageDigest md = null;
+
+		try {
+			md = MessageDigest.getInstance("SHA-256");
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		byte[] digest = md.digest(geneNo.getBytes(StandardCharsets.UTF_8));
+		String sha256 = DatatypeConverter.printHexBinary(digest).toLowerCase();
+
+		return sha256;
 	}
-	
+
 	public String getNewGeneNo() {
 		Random rand = new Random();
-		String geneNo = "GENE" +  rand.nextInt(1000000);
+		String geneNo = "GENE" + rand.nextInt(1000000);
 		return geneNo;
 	}
 }
