@@ -59,9 +59,8 @@ function getContextPath(){
 function modal(){
     var modal = $(".modal_layer");
     var btn = $(".modalBtn");
-console.log(modal)
-    $(document).on("click", btn, function(){
-		console.log("!")
+
+    btn.on("click",function(){
         var t = $(this);
 
         if(t.siblings(".modal_layer").is(":hidden")){
@@ -106,6 +105,6 @@ console.log(modal)
 }
 
 $(function(){
-    loadClass()   //로딩 후 클래스 추가
+    loadClass();    //로딩 후 클래스 추가
     modal()
 });

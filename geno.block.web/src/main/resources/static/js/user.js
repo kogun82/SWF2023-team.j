@@ -9,8 +9,6 @@ function getData(){
 		async : false,
 		success : function(result){
 			
-			console.log(result)
-			
 			let listStr = ""
 			
 			result.forEach(function(element){
@@ -30,8 +28,8 @@ function getData(){
 	            listStr +=              "</div>"
 	            listStr +=          "</div>"
 	            listStr +=      "</a>"
-	            listStr +=      "<button type='button' class='signBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Reposrt</span></button>"
-	            listStr +=      "<button type='button' class='linkBtn'><span class='sr-only'>Remove</span></button>"
+	            listStr +=      "<button type='button' class='signBtn'><span class='sr-only'>Reposrt</span></button>"
+	            listStr +=      "<button type='button' class='linkBtn' onclick='report(\"" + element['Record']['report_url'] + "\")'><span class='sr-only'>Remove</span></button>"
 	            listStr +=  "</li>"
 			})
 			
@@ -41,7 +39,7 @@ function getData(){
 }
 
 function report(report_url){
-	if(report_url){
+	if(report_url && report_url != "none"){
 		
 		window.open(report_url, '_blank', 'noopener, noreferrer');
 	}
